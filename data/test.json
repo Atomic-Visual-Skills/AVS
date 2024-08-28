@@ -1,0 +1,499 @@
+[
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_12.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “r”?",
+        "answer": "p",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_13.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “r”?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_14.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “F”?",
+        "answer": "E",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_15.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a counterclockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ArGW",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_16.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a clockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "AWGr",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_17.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_18.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_19.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_20.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in counterclockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ANKR",
+        "skill": "clockwise",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "clockwise/sw_image_21.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "counterclockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_22.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "counterclockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_23.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "counterclockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_24.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "counterclockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_25.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_26.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_27.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_28.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_29.png",
+        "question": "In the picture, a red dot and four arrows labeled 1, 2, 3, and 4 are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot as the origin. Among arrows 1, 2, 3, and 4, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "4",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_30.png",
+        "question": "In the picture, a red dot and four arrows labeled 1, 2, 3, and 4 are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot as the origin. Among arrows 1, 2, 3, and 4, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "4",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_31.png",
+        "question": "In the picture, a red dot and four arrows labeled 1, 2, 3, and 4 are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot as the origin. Among arrows 1, 2, 3, and 4, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "4",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_32.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_33.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_34.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "clockwise/sw_image_35.png",
+        "question": "In the image, there is a cycle. What is the direction of the cycle, clockwise or counterclockwise? You may use arrows in the image as hints. Choose your answer from ”clockwise” or ”counterclockwise”.",
+        "answer": "clockwise",
+        "skill": "clockwise",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_1.png",
+        "question": "In the image, there are four triangles with number labels. Three of them are similar and one of them is not. Which is not similar to the other triangles? Tell the number label indicating that triangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "2",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_2.png",
+        "question": "In the image, there are four triangles with number labels. Three of them are similar and one of them is not. Which is not similar to the other triangles? Tell the number label indicating that triangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_3.png",
+        "question": "In the image, there are four diamonds with number labels. Three of them are similar and one of them is not. Which is not similar to the other diamonds? Tell the number label indicating that triangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "4",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_4.png",
+        "question": "In the image, there are four diamonds with number labels. Three of them are similar and one of them is not. Which is not similar to the other diamonds? Tell the number label indicating that triangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_5.png",
+        "question": "In the image, there are four diamonds with number labels. Three of them are similar and one of them is not. Which is not similar to the other diamonds? Tell the number label indicating that triangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_6.png",
+        "question": "There are five hearts in the image. Choose the shape that is geometrically similar to the black heart (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "1",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_7.png",
+        "question": "There are five hearts in the image. Choose the shape that is geometrically similar to the black heart (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "1",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_8.png",
+        "question": "There are five hearts in the image. Choose the shape that is not geometrically similar to the black heart (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "2",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_9.png",
+        "question": "There are five hearts in the image. Choose the shape that is not geometrically similar to the black heart (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "2",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_10.png",
+        "question": "There are five hearts in the image. Choose the shape that is not geometrically similar to the black heart (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "2",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_11.png",
+        "question": "There are five stars in the image. Choose the shape that is geometrically similar to the black star (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_12.png",
+        "question": "There are five stars in the image. Choose the shape that is geometrically similar to the black star (leftmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_13.png",
+        "question": "There are five stars in the image. Choose the shape that is geometrically similar to the black star (rightmost heart). What is the number indicating that shape? Your answer should be “1”, “2”, “3”, or “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_14.png",
+        "question": "Choose the phrase in parentheses that correctly describes the image. Rewrite the sentence with the chosen phrase. “In the image, (shape I and II/shape I and IV/shape II and III) are geometrically similar.”",
+        "answer": "Shape II and III",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_15.png",
+        "question": "Choose the phrase in parentheses that correctly describes the image. Rewrite the sentence with the chosen phrase. “In the image, (shape I and II/shape I and IV/shape II and III) are geometrically similar.”",
+        "answer": "Shape II and III",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_16.png",
+        "question": "Choose the phrase in parentheses that correctly describes the image. Rewrite the sentence with the chosen phrase. “In the image, (shape I and II/shape I and III/shape II and III/shape III and IV) are geometrically similar.”",
+        "answer": "Shape I and III",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_17.png",
+        "question": "Select all shapes from B, C, D, E, and F that are geometrically similar to shape A in the image. List the letters in alphabetical order. If the shapes similar to A are W, X, Y, and Z, the answer should be written in the format 'W, X, Y, Z’.",
+        "answer": "C, D",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_18.png",
+        "question": "Select all shapes from B, C, D, E, and F that are geometrically similar to shape A in the image. List the letters in alphabetical order. If the shapes similar to A are W, X, Y, and Z, the answer should be written in the format 'W, X, Y, Z’.",
+        "answer": "C, D",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_19.png",
+        "question": "Select all shapes from B, C, D, E, and F that are geometrically similar to shape A in the image. List the letters in alphabetical order. If the shapes similar to A are W, X, Y, and Z, the answer should be written in the format 'W, X, Y, Z’.",
+        "answer": "C, D",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_20.png",
+        "question": "Select all shapes from B, C, D, E, and F that are geometrically similar to shape A in the image. List the letters in alphabetical order. If the shapes similar to A are W, X, Y, and Z, the answer should be written in the format 'W, X, Y, Z’.",
+        "answer": "C, D",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_21.png",
+        "question": "There are five stars in the image. Choose the shape that is geometrically similar to the red star. What is the color of that star? Your answer should be “white”, “green”, “blue”, or “yellow”.",
+        "answer": "yellow",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_22.png",
+        "question": "There are five stars in the image. Choose the shape that is geometrically similar to the red star. What is the color of that star? Your answer should be “purple”, “green”, “blue”, or “yellow”.",
+        "answer": "yellow",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_23.png",
+        "question": "There are five triangles in the image. Choose the shape that is geometrically similar to the red triangle. What is the color of that triangle? Your answer should be “purple”, “green”, “blue”, or “yellow”.",
+        "answer": "purple",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_24.png",
+        "question": "There are five triangles in the image. Choose the shape that is geometrically similar to the red triangle. What is the color of that triangle? Your answer should be “purple”, “green”, “blue”, or “yellow”.",
+        "answer": "purple",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_25.png",
+        "question": "In the image, there are three pairs of shapes. Among three pairs, choose the pair that is not in the similarity relationship (in the sense of geometry). Choose your answer from “1”, “2”, and “3”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_26.png",
+        "question": "In the image, there are three pairs of shapes. Among three pairs, choose the pair that is not in the similarity relationship (in the sense of geometry). Choose your answer from “1”, “2”, and “3”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_27.png",
+        "question": "In the image, there are three pairs of shapes. Among three pairs, choose the pair that is not in the similarity relationship (in the sense of geometry). Choose your answer from “1”, “2”, and “3”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_28.png",
+        "question": "In the image, there are three pairs of shapes. Among three pairs, choose the pair that is not in the similarity relationship (in the sense of geometry). Choose your answer from “1”, “2”, and “3”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_29.png",
+        "question": "In the image, there are three pairs of shapes. Among three pairs, choose the pair that is not in the similarity relationship (in the sense of geometry). Choose your answer from “1”, “2”, and “3”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_30.png",
+        "question": "There are four black shapes and a red oval in the image. Choose the shape that is geometrically similar to the red oval. What is the label indicating that shape? Your answer should be “A”, “B”, ”C”, or “D”.",
+        "answer": "A",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_31.png",
+        "question": "There are four black shapes and a red oval in the image. Choose the shape that is geometrically similar to the red oval. What is the label indicating that shape? Your answer should be “A”, “B”, ”C”, or “D”.",
+        "answer": "A",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_32.png",
+        "question": "There are four black shapes and a red oval in the image. Choose the shape that is geometrically similar to the red oval. What is the label indicating that shape? Your answer should be “A”, “B”, ”C”, or “D”.",
+        "answer": "A",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_33.png",
+        "question": "In the image, there are four hexagons with number labels. Three of them are similar and one of them is not. Which is not similar to the other hexagons? Tell the number label indicating that hexagon. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "3",
+        "skill": "similarity",
+        "difficulty": "easy"
+    },
+    {
+        "image_dir": "similarity/sw_image_34.png",
+        "question": "In the image, there are four rectangles with number labels. Three of them are similar and one of them is not. Which is not similar to the other rectangles? Tell the number label indicating that rectangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "4",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_35.png",
+        "question": "In the image, there are four rectangles with number labels. Three of them are similar and one of them is not. Which is not similar to the other rectangles? Tell the number label indicating that rectangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "4",
+        "skill": "similarity",
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "similarity/sw_image_36.png",
+        "question": "In the image, there are four rectangles with number labels. Three of them are similar and one of them is not. Which is not similar to the other rectangles? Tell the number label indicating that rectangle. You should choose your answer from “1”, “2”, “3”, and “4”.",
+        "answer": "4",
+        "skill": "similarity",
+        "difficulty": "medium"
+    }
+]

@@ -3,10 +3,10 @@ import os
 from openai import OpenAI
 from dotenv import find_dotenv, load_dotenv
 
-from ModelInterface import ModelInterface
+from .ModelInterface import ModelInterface
 
 import sys
-sys.path.append('../')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 
 
