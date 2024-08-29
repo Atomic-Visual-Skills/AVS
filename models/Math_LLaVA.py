@@ -22,7 +22,6 @@ model_name = 'mllava'
 
 # code from https://github.com/pipilurj/G-LLaVA/blob/main/gllava/eval/run_llava.py
 def eval_model(tokenizer, model, image_processor, args):
-    # Model
     disable_torch_init()
 
     qs = args.query
@@ -51,9 +50,9 @@ def eval_model(tokenizer, model, image_processor, args):
     prompt = conv.get_prompt()
 
     image = open_image(args.image_file)
-    image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
+    image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().to(model.device)
 
-    input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
+    input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).to(model.device)
 
     stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
     keywords = [stop_str]
@@ -64,8 +63,10 @@ def eval_model(tokenizer, model, image_processor, args):
             input_ids,
             images=image_tensor,
             do_sample=True,
-            temperature=0.2,
-            max_new_tokens=1024,
+            temperature=args.temperature,
+            top_p=args.top_p,
+            num_beams=args.num_beams,
+            max_new_tokens=args.max_new_tokens,
             use_cache=True,
             stopping_criteria=[stopping_criteria])
 
@@ -82,12 +83,13 @@ def eval_model(tokenizer, model, image_processor, args):
 
 
 class Math_LLaVA(ModelInterface):
-    def __init__(self, model='/content/Math-LLaVA', temperature=0, max_tokens=1024):
+    def __init__(self, model='Zhiqiang007/Math-LLaVA', temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
         self.tokenizer, self.model, self.image_processor, _ = load_pretrained_model(model, None, model_name)
+        self.model = self.model.to(self.device)
 
     def run(self, image_path, prompt):
         args = type('Args', (), {
@@ -102,5 +104,5 @@ class Math_LLaVA(ModelInterface):
             "max_new_tokens": self.max_tokens
         })()
 
-        output = eval_model(args)
+        output = eval_model(self.tokenizer, self.model, self.image_processor, args)
         return output
