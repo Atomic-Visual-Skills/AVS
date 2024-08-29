@@ -30,7 +30,7 @@ class InternVL(ModelInterface):
 
         image = open_image(image_path)
         pixel_values = self.image_processor(images=image, return_tensors='pt').pixel_values.to(torch.bfloat16).to(self.device)
-        generation_config = dict(max_new_tokens=self.max_tokens, do_sample=True, temperature=self.temperature)
+        generation_config = dict(max_new_tokens=self.max_tokens, do_sample=True if self.temperature > 0 else False, temperature=self.temperature)
 
         output = self.model.chat(self.tokenizer, pixel_values, prompt, generation_config)
 
