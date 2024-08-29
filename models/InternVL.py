@@ -1,7 +1,7 @@
 import os
 
 import torch
-from transformers import AutoProcessor, AutoModel
+from transformers import AutoTokenizer, AutoModel, CLIPImageProcessor
 
 from .ModelInterface import ModelInterface
 
@@ -16,31 +16,22 @@ class InternVL(ModelInterface):
         self.max_tokens = max_tokens
 
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
-        self.processor = AutoProcessor.from_pretrained(model, trust_remote_code=True)
-        self.model = AutoModel.from_pretrained(model, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True, use_flash_attn=True, trust_remote_code=True).to(self.device)
+        self.tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True, use_fast=False)
+        self.image_processor = CLIPImageProcessor.from_pretrained(model)
+        self.model = AutoModel.from_pretrained(
+            model,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            use_flash_attn=True,
+            trust_remote_code=True).eval().to(self.device)
 
     def run(self, image_path, prompt):
-        conversation = [
-            {
-                'role': 'user',
-                'content': [
-                    {'type': 'image'},
-                    {'type': 'text', 'text': prompt}
-                ]
-            }
-        ]
-
-        prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
-        print(prompt)
+        prompt = '<image>\n' + prompt
 
         image = open_image(image_path)
-        inputs = self.processor(prompt, image, return_tensors='pt').to(self.device)
+        pixel_values = self.image_processor(images=image, return_tensors='pt').pixel_values.to(torch.bfloat16).to(self.device)
+        generation_config = dict(max_new_tokens=self.max_tokens, do_sample=True, temperature=self.temperature)
 
-        output = self.model.generate(**inputs, max_new_tokens=self.max_tokens, temperature=self.temperature, do_sample=True, top_p=None)[0]
-        output = self.processor.decode(output, skip_special_tokens=False)
-
-        output = output.replace(prompt, '')
-        output = output.replace('<s> ', '')
-        output = output.replace('</s>', '')
+        output = self.model.chat(self.tokenizer, pixel_values, prompt, generation_config)
 
         return output
