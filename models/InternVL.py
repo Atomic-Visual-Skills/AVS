@@ -11,14 +11,13 @@ from utils import *
 
 
 class InternVL(ModelInterface):
-    def __init__(self, model='OpenGVLab/InternVL-Chat-V1-2-Plus', temperature=0, max_tokens=1024):
+    def __init__(self, model='OpenGVLab/InternVL-Chat-V1-1', temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
-
         self.processor = AutoProcessor.from_pretrained(model, trust_remote_code=True)
-        self.model = AutoModel.from_pretrained(model, torch_dtype=torch.float16, low_cpu_mem_usage=True, use_flash_attn=True, trust_remote_code=True).to(self.device)
+        self.model = AutoModel.from_pretrained(model, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True, use_flash_attn=True, trust_remote_code=True).to(self.device)
 
     def run(self, image_path, prompt):
         conversation = [
