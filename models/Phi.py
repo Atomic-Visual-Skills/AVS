@@ -17,7 +17,7 @@ class Phi(ModelInterface):
 
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
         self.processor = AutoProcessor.from_pretrained(model, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True, use_flash_attn=True, trust_remote_code=True).to(self.device)
+        self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True, trust_remote_code=True).to(self.device)
 
     def run(self, image_path, prompt):
         conversation = [
