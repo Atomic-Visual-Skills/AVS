@@ -17,7 +17,7 @@ class InternVL(ModelInterface):
 
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
 
-        self.processor = AutoProcessor.from_pretrained(model, trust_remote=True)
+        self.processor = AutoProcessor.from_pretrained(model, trust_remote_code=True)
         self.model = AutoModel.from_pretrained(model, torch_dtype=torch.float16, low_cpu_mem_usage=True, use_flash_attn=True, trust_remote_code=True).to(self.device)
 
     def run(self, image_path, prompt):
