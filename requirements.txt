@@ -1,4 +1,13 @@
+# common
 python-dotenv
+pillow
 
-[optional]
+# gpt-4o
 openai
+
+# llava
+transformers
+accelerate
+bitsandbytes
+sentencepiece
+protobuf
