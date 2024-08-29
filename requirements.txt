@@ -1,6 +1,7 @@
 # common
 python-dotenv
 pillow
+tqdm
 
 # gpt-4o
 openai

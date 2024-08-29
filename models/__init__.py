@@ -13,6 +13,9 @@ def load_model(model, *args, **kwargs):
     elif model == 'intern-vl':
         from .InternVL import InternVL
         return InternVL(*args, **kwargs)
+    elif model == 'phi':
+        from .Phi import Phi
+        return Phi(*args, **kwargs)
     else:
         raise ValueError('Unknown model name')
 
