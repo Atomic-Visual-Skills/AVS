@@ -11,7 +11,7 @@ from utils import *
 
 
 class InternVL(ModelInterface):
-    def __init__(self, model='OpenGVLab/InternVL-Chat-V1-1', temperature=0, max_tokens=1024):
+    def __init__(self, model='microsoft/Phi-3.5-vision-instruct', temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
@@ -40,7 +40,5 @@ class InternVL(ModelInterface):
         output = self.processor.decode(output, skip_special_tokens=False)
 
         output = output.replace(prompt, '')
-        output = output.replace('<s> ', '')
-        output = output.replace('</s>', '')
 
         return output
