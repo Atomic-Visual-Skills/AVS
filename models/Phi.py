@@ -32,7 +32,7 @@ class Phi(ModelInterface):
         image = open_image(image_path)
         inputs = self.processor(prompt, [image], return_tensors='pt').to(self.device)
 
-        output = self.model.generate(**inputs, max_new_tokens=self.max_tokens, temperature=self.temperature, do_sample=True if self.temperature > 0 else False, top_p=None)[0]
+        output = self.model.generate(**inputs, max_new_tokens=self.max_tokens, eos_token_id=self.processor.tokenizer.eos_token_id, temperature=self.temperature, do_sample=True if self.temperature > 0 else False, top_p=None)[0]
         output = self.processor.decode(output, skip_special_tokens=False)
 
         output = output.replace(prompt, '')
