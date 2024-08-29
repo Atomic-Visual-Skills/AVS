@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 
 
-class InternVL(ModelInterface):
+class Phi(ModelInterface):
     def __init__(self, model='microsoft/Phi-3.5-vision-instruct', temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
