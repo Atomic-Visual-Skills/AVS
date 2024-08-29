@@ -30,7 +30,7 @@ class Phi(ModelInterface):
             }
         ]
 
-        prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
+        prompt = self.processor.tokenizer.apply_chat_template(conversation, add_generation_prompt=True)
         print(prompt)
 
         image = open_image(image_path)
