@@ -10,8 +10,9 @@ import models
 
 
 model_dict = {
-    'gpt-4o': models.GPT_4o(),
-    'llava': models.LLaVA()
+    'gpt-4o': models.GPT_4o,
+    'llava': models.LLaVA,
+    'mllava': models.Math_LLaVA
 }
 
 
@@ -52,12 +53,12 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, required=True, help='Input JSON file path')
     parser.add_argument('--output', type=str, required=True, help='Output JSON file path')
     parser.add_argument('--model', type=str, required=True, help='Name of the model',
-                        choices=['gpt-4o', 'llava', 'custom'])
+                        choices=['gpt-4o', 'llava', 'mllava', 'custom'])
     parser.add_argument('--cot', action='store_true', help='Use chain of thought')
     args = parser.parse_args()
 
     data = read_json(args.input)
-    model = model_dict[args.model]
+    model = model_dict[args.model]()
     image_dir = os.path.join(os.path.dirname(args.input), 'images')
 
     result = run_model(model, data, args.cot, image_dir)
