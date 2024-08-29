@@ -2,7 +2,6 @@ import os
 
 import torch
 from transformers import AutoProcessor, LlavaNextForConditionalGeneration
-from transformers import BitsAndBytesConfig
 
 from .ModelInterface import ModelInterface
 

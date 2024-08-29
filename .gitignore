@@ -1,5 +1,6 @@
 data/images/
 venv/
+jupyter/
 
 *.env
 *.vscode
