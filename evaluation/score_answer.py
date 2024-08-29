@@ -8,7 +8,7 @@ from utils import *
 # OpenAI
 import openai
 
-from prompts import demo_prompt_score
+from prompts import sys_prompt, demo_prompt_score
 
 
 # load demo prompt
@@ -21,7 +21,7 @@ def verify_judgment(judgment):
 
 def create_test_prompt(demo_prompt, inst):
     demo_prompt = demo_prompt.strip()
-    test_prompt = f"[Standard Answer] {inst['answer']}\n[Model Answer] {inst['extraction']}\nJudgment: "
+    test_prompt = f"[Standard Answer] {inst['answer'].lower()}\n[Model Answer] {inst['extraction']}\nJudgment: "
     full_prompt = f"{demo_prompt}\n\n{test_prompt}"
     return full_prompt
 
@@ -33,7 +33,7 @@ def match_answer(inst, api_key, exact_match=False, verbose=False):
     # general extraction
     try:
         test_prompt = create_test_prompt(demo_prompt_score, inst)
-        judgment = get_evaluation_chat_response(test_prompt, api_key)
+        judgment = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
         # sometimes gpt may return 'Judgment: 1' or 'Judgment: 0'
         return judgment.lower().replace("judgment:", "").strip()
     except Exception as e:
@@ -90,7 +90,7 @@ if __name__ == '__main__':
         else:
             judgment = match_answer(save_inst, args.api_key, args.exact_match)
             while True:
-                if verify_judgment(judgment):
+                if not verify_judgment(judgment):
                     print('Wrong judgment format: ', judgment)
                     judgment = match_answer(save_inst, args.api_key, args.exact_match)
                 else:
@@ -102,9 +102,9 @@ if __name__ == '__main__':
         # judgment statistics
         printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgment']])}", args.verbose)
 
-        if i % args.save_every == 0 or i == len(results)-1:
+        if (i+1) % args.save_every == 0 or i == len(results)-1:
             print(f"Saving results to {args.save_file}...")
-            write_json(save_results, args.save_file)
+            write_json(args.save_file, save_results)
             print(f"Results saved.")
     
      

@@ -18,7 +18,7 @@ def write_json(file_path, data):
         return json.dump(data, f, ensure_ascii=False)
     
 def get_evaluation_chat_response(sys_prompt, user_prompt, api_key):
-    client = OpenAI(api_key)
+    client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[

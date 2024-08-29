@@ -5,6 +5,7 @@ Thoroughly read the provided instruction to ensure a solid understanding of the 
 
 demo_prompt_extract = """
 Please read the following example. Then extract the answer from the model response and type it at the end of the prompt.
+If the question requires a full sentence with correct word filled in, please provide the word only.
 
 Question: There is a single rectangle with multiple color layers in the image. What is the color of the boundary of the rectangle? The answer should be one of ‘red’, ‘yellow’, ‘green’, or ‘blue’.
 Model response: The color of the boundary of the circle is red.

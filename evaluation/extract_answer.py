@@ -9,8 +9,7 @@ from pathlib import Path
 # OpenAI
 import openai
 
-from prompts import demo_prompt_extract
-
+from prompts import sys_prompt, demo_prompt_extract
 
 def verify_extraction(extraction):
     extraction = extraction.strip()
@@ -29,7 +28,7 @@ def create_test_prompt(demo_prompt, question, response):
 def extract_answer(response, inst, api_key, verbose=False):
     try:
         test_prompt = create_test_prompt(demo_prompt_extract, response, inst)
-        extraction = get_evaluation_chat_response(test_prompt, api_key)
+        extraction = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
         # only extract the content after 'Extracted Answer:'
         if 'extracted answer:' in extraction.lower():
             return extraction.lower().split('extracted answer:')[-1].strip()
@@ -37,7 +36,7 @@ def extract_answer(response, inst, api_key, verbose=False):
             return extraction.lower()
     except Exception as e:
         printv(e, verbose)
-        print(f"Error in extracting answer for {response}")
+        print(f"Error in extracting answer for '{response}'")
     return ""
 
 
@@ -100,10 +99,7 @@ if __name__ == '__main__':
             
             save_results.append(save_inst)
 
-        # extraction statistics
-        printv(f"Total: {len(save_results)}, Extracted: {len([inst for inst in save_results if inst['extraction']])}", args.verbose)
-
-        if i % args.save_every == 0 or i == len(results) - 1:
+        if (i+1) % args.save_every == 0 or i == len(results) - 1:
             printv(f"Saving results to {args.save_file}...", args.verbose)
-            write_json(save_results, args.save_file)
+            write_json(args.save_file, save_results)
             printv(f"Results saved.", args.verbose)
