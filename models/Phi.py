@@ -35,6 +35,4 @@ class Phi(ModelInterface):
         output = self.model.generate(**inputs, max_new_tokens=self.max_tokens, eos_token_id=self.processor.tokenizer.eos_token_id, temperature=self.temperature, do_sample=True if self.temperature > 0 else False, top_p=None)[0, inputs['input_ids'].shape[1]:]
         output = self.processor.decode(output, skip_special_tokens=True)
 
-        output = output.replace(prompt, '')
-
         return output
