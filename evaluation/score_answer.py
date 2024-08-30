@@ -21,7 +21,7 @@ def verify_judgment(judgment):
 
 def create_test_prompt(demo_prompt, inst):
     demo_prompt = demo_prompt.strip()
-    test_prompt = f"[Standard Answer] {inst['answer'].lower()}\n[Model Answer] {inst['extraction']}\nJudgment: "
+    test_prompt = f"[Standard Answer] {inst['answer']}\n[Model Answer] {inst['extraction']}\nJudgment: "
     full_prompt = f"{demo_prompt}\n\n{test_prompt}"
     return full_prompt
 

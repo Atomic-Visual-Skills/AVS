@@ -30,10 +30,10 @@ def extract_answer(response, inst, api_key, verbose=False):
         test_prompt = create_test_prompt(demo_prompt_extract, response, inst)
         extraction = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
         # only extract the content after 'Extracted Answer:'
-        if 'extracted answer:' in extraction.lower():
-            return extraction.lower().split('extracted answer:')[-1].strip()
+        if 'Extracted answer:' in extraction:
+            return extraction.split('Extracted answer:')[-1].strip()
         else:
-            return extraction.lower()
+            return extraction.strip()
     except Exception as e:
         printv(e, verbose)
         print(f"Error in extracting answer for '{response}'")
