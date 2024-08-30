@@ -15,7 +15,7 @@ class Phi(ModelInterface):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
-        self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
+        self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
         self.processor = AutoProcessor.from_pretrained(model, trust_remote_code=True)
         self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype='auto', low_cpu_mem_usage=True, trust_remote_code=True, _attn_implementation='flash_attention_2').to(self.device)
 

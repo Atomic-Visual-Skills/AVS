@@ -15,7 +15,7 @@ class InternVL(ModelInterface):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
-        self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'  # TODO: fix this
+        self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
         self.tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True, use_fast=False)
         self.image_processor = CLIPImageProcessor.from_pretrained(model)
         self.model = AutoModel.from_pretrained(
