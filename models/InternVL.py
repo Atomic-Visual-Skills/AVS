@@ -11,7 +11,7 @@ from utils import *
 
 
 class InternVL(ModelInterface):
-    def __init__(self, model='OpenGVLab/InternVL-Chat-V1-1', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 

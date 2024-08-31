@@ -16,7 +16,7 @@ from deepseek_vl.utils.io import load_pil_images
 
 
 class DeepSeek_VL(ModelInterface):
-    def __init__(self, model='deepseek-ai/deepseek-vl-1.3b-chat', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 

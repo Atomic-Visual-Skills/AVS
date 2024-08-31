@@ -15,7 +15,7 @@ from llava.eval.run_llava import evalmodel
 
 
 class Math_LLaVA(ModelInterface):
-    def __init__(self, model='liuhaotian/llava-v1.5-13b', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 

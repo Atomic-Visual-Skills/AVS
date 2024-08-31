@@ -11,7 +11,7 @@ from utils import *
 
 
 class GPT_4o(ModelInterface):
-    def __init__(self, model='gpt-4o', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.model = model
         self.temperature = temperature
         self.max_tokens = max_tokens

@@ -11,7 +11,7 @@ from utils import *
 
 
 class LLaVA(ModelInterface):
-    def __init__(self, model='llava-hf/llava-v1.6-vicuna-13b-hf', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
