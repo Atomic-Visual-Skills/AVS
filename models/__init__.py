@@ -20,7 +20,16 @@ def load_model(model, size=None, *args, **kwargs):
             raise ValueError(f'Size {size} doesn\'t exist. Choose the size from [7b, 13b, 72b, 110b]')
     elif model == 'llava-ov':
         from .LLaVA_OneVision import LLaVA_OneVision
-        return LLaVA_OneVision(*args, **kwargs)
+        if size == None:
+            raise ValueError('Enter the model size for the LLaVA-OneVision model.')
+        elif size in ['0.5b', '0.5B', '0.5']:
+            return LLaVA_OneVision('lmms-lab/llava-onevision-qwen2-0.5b-si', *args, **kwargs)
+        elif size in ['7b', '7B', '7']:
+            return LLaVA_OneVision('lmms-lab/llava-onevision-qwen2-7b-si', *args, **kwargs)
+        elif size in ['72b', '72B', '72']:
+            return LLaVA_OneVision('lmms-lab/llava-onevision-qwen2-72b-si', *args, **kwargs)
+        else:
+            raise ValueError(f'Size {size} doesn\'t exist. Choose the size from [0.5b, 7b, 72b]')
     elif model == 'mllava':
         from .Math_LLaVA import Math_LLaVA
         return Math_LLaVA('Zhiqiang007/Math-LLaVA', *args, **kwargs)

@@ -9,7 +9,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'modules/LLaVA-NEXT')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'modules/LLaVA-NeXT')))
 from llava.model.builder import load_pretrained_model
 from llava.mm_utils import get_model_name_from_path, process_images, tokenizer_image_token
 from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
@@ -17,7 +17,7 @@ from llava.conversation import conv_templates, SeparatorStyle
 
 
 class LLaVA_OneVision(ModelInterface):
-    def __init__(self, model='lmms-lab/llava-onevision-qwen2-0.5b-si', temperature=0, max_tokens=1024):
+    def __init__(self, model, temperature=0, max_tokens=1024):
         self.temperature = temperature
         self.max_tokens = max_tokens
 
