@@ -7,6 +7,9 @@ def load_model(model, *args, **kwargs):
     elif model == 'llava':
         from .LLaVA import LLaVA
         return LLaVA(*args, **kwargs)
+    elif model == 'llava-ov':
+        from .LLaVA_OneVision import LLaVA_OneVision
+        return LLaVA_OneVision(*args, **kwargs)
     elif model == 'mllava':
         from .Math_LLaVA import Math_LLaVA
         return Math_LLaVA(*args, **kwargs)
@@ -16,6 +19,9 @@ def load_model(model, *args, **kwargs):
     elif model == 'phi':
         from .Phi import Phi
         return Phi(*args, **kwargs)
+    elif model == 'deepseek-vl':
+        from .DeepSeek_VL import DeepSeek_VL
+        return DeepSeek_VL(*args, **kwargs)
     else:
         raise ValueError('Unknown model name')
 

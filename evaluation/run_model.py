@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, required=True, help='Input JSON file path')
     parser.add_argument('--output', type=str, required=True, help='Output JSON file path')
     parser.add_argument('--model', type=str, required=True, help='Name of the model',
-                        choices=['gpt-4o', 'llava', 'mllava', 'intern-vl', 'phi', 'custom'])
+                        choices=['gpt-4o', 'llava', 'llava-ov', 'mllava', 'intern-vl', 'phi', 'deepseek-vl', 'custom'])
     parser.add_argument('--cot', action='store_true', help='Use chain of thought')
     args = parser.parse_args()
 

@@ -1,7 +1,6 @@
 import os
 
 import torch
-from transformers import AutoProcessor, AutoModelForCausalLM
 
 from .ModelInterface import ModelInterface
 
@@ -25,6 +24,7 @@ class Math_LLaVA(ModelInterface):
         self.model_name = get_model_name_from_path(model)
         self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(model, None, self.model_name)
         self.model = self.model.to(self.device)
+        self.model.eval()
 
 
     def run(self, image_path, prompt):

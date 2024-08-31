@@ -24,3 +24,6 @@ timm
 
 # Phi
 flash-attn
+
+# deepseek
+attrdict

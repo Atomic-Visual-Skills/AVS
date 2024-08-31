@@ -18,6 +18,7 @@ class LLaVA(ModelInterface):
         self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
         self.processor = LlavaNextProcessor.from_pretrained(model)
         self.model = LlavaNextForConditionalGeneration.from_pretrained(model, torch_dtype=torch.float16, low_cpu_mem_usage=True).to(self.device)
+        self.model.eval()
 
     def run(self, image_path, prompt):
         conversation = [
