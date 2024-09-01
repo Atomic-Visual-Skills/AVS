@@ -25,9 +25,9 @@ def create_test_prompt(demo_prompt, question, response):
     return full_prompt
 
 
-def extract_answer(response, inst, api_key, verbose=False):
+def extract_answer(question, response, api_key, verbose=False):
     try:
-        test_prompt = create_test_prompt(demo_prompt_extract, response, inst)
+        test_prompt = create_test_prompt(demo_prompt_extract, question, response)
         extraction = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
         # only extract the content after 'Extracted Answer:'
         if 'Extracted answer:' in extraction:
@@ -89,7 +89,7 @@ if __name__ == '__main__':
                 printv("######### NO MODEL ANSWER ###########", args.verbose)  # some model may output nothing due to safety issue
             response = trunk_response(response, args.trunk_response)
 
-            save_inst['extraction'] = extract_answer(response, save_inst, args.api_key)
+            save_inst['extraction'] = extract_answer(save_inst['question'], response, args.api_key, args.verbose)
 
             # verify extraction
             if not verify_extraction(save_inst['extraction']):
