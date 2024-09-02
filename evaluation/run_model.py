@@ -8,12 +8,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 import models
 
-
-model_dict = {
-    'gpt-4o': models.GPT_4o()
-}
-
-
 def run_model(model: models.ModelInterface, data, cot, image_dir):
     result = []
     errors = []
@@ -51,12 +45,13 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, required=True, help='Input JSON file path')
     parser.add_argument('--output', type=str, required=True, help='Output JSON file path')
     parser.add_argument('--model', type=str, required=True, help='Name of the model',
-                        choices=['gpt-4o', 'custom'])
+                        choices=['gpt-4o', 'gemini', 'claude', 'qwen', 'llava', 'llava-ov', 'mllava', 'intern-vl', 'phi', 'deepseek-vl', 'custom'])
     parser.add_argument('--cot', action='store_true', help='Use chain of thought')
+    parser.add_argument('--size', type=str, required=False, default=None)
     args = parser.parse_args()
 
     data = read_json(args.input)
-    model = model_dict[args.model]
+    model = models.load_model(args.model, args.size)
     image_dir = os.path.join(os.path.dirname(args.input), 'images')
 
     result = run_model(model, data, args.cot, image_dir)
