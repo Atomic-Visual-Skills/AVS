@@ -5,7 +5,9 @@
         "answer": "A",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_1.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_1.png'",
+        "extraction": "a",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_2.png",
@@ -13,7 +15,9 @@
         "answer": "A",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_2.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_2.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_3.png",
@@ -21,7 +25,9 @@
         "answer": "D",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_3.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_3.png'",
+        "extraction": "d",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_4.png",
@@ -29,7 +35,9 @@
         "answer": "A",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_4.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_4.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_5.png",
@@ -37,7 +45,9 @@
         "answer": "A",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_5.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_5.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_6.png",
@@ -45,7 +55,9 @@
         "answer": "C",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_6.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_6.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_7.png",
@@ -53,7 +65,9 @@
         "answer": "C",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_7.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_7.png'",
+        "extraction": "c",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_8.png",
@@ -61,7 +75,9 @@
         "answer": "C",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_8.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_8.png'",
+        "extraction": "c",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_9.png",
@@ -69,7 +85,9 @@
         "answer": "B",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_9.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_9.png'",
+        "extraction": "b",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_10.png",
@@ -77,7 +95,9 @@
         "answer": "B",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_10.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_10.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_11.png",
@@ -85,7 +105,9 @@
         "answer": "y",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_11.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_11.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_12.png",
@@ -93,7 +115,9 @@
         "answer": "p",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_12.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_12.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_13.png",
@@ -101,7 +125,9 @@
         "answer": "A",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_13.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_13.png'",
+        "extraction": "a",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_14.png",
@@ -109,7 +135,9 @@
         "answer": "E",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_14.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_14.png'",
+        "extraction": "e",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_15.png",
@@ -117,7 +145,9 @@
         "answer": "ArGW",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_15.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_15.png'",
+        "extraction": "[errno 2]",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_16.png",
@@ -125,7 +155,9 @@
         "answer": "AWGr",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_16.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_16.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_17.png",
@@ -133,7 +165,9 @@
         "answer": "ARKN",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_17.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_17.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_18.png",
@@ -141,7 +175,9 @@
         "answer": "ARKN",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_18.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_18.png'",
+        "extraction": "arkn",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_19.png",
@@ -149,7 +185,9 @@
         "answer": "ARKN",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_19.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_19.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_20.png",
@@ -157,7 +195,9 @@
         "answer": "ANKR",
         "skill": "clockwise",
         "difficulty": "medium",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_20.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_20.png'",
+        "extraction": "ankr",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_21.png",
@@ -165,7 +205,9 @@
         "answer": "counterclockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_21.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_21.png'",
+        "extraction": "counterclockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_22.png",
@@ -173,7 +215,9 @@
         "answer": "counterclockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_22.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_22.png'",
+        "extraction": "counterclockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_23.png",
@@ -181,7 +225,9 @@
         "answer": "counterclockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_23.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_23.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_24.png",
@@ -189,7 +235,9 @@
         "answer": "counterclockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_24.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_24.png'",
+        "extraction": "counterclockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_25.png",
@@ -197,7 +245,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_25.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_25.png'",
+        "extraction": "2",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_26.png",
@@ -205,7 +255,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_26.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_26.png'",
+        "extraction": "clockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_27.png",
@@ -213,7 +265,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_27.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_27.png'",
+        "extraction": "clockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_28.png",
@@ -221,7 +275,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_28.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_28.png'",
+        "extraction": "clockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_29.png",
@@ -229,7 +285,9 @@
         "answer": "4",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_29.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_29.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_30.png",
@@ -237,7 +295,9 @@
         "answer": "4",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_30.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_30.png'",
+        "extraction": "4",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_31.png",
@@ -245,7 +305,9 @@
         "answer": "4",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_31.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_31.png'",
+        "extraction": "4",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_32.png",
@@ -253,7 +315,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_32.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_32.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "clockwise/sw_image_33.png",
@@ -261,7 +325,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_33.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_33.png'",
+        "extraction": "clockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_34.png",
@@ -269,7 +335,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_34.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_34.png'",
+        "extraction": "clockwise",
+        "judgment": 1
     },
     {
         "image_dir": "clockwise/sw_image_35.png",
@@ -277,7 +345,9 @@
         "answer": "clockwise",
         "skill": "clockwise",
         "difficulty": "easy",
-        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_35.png'"
+        "model_answer": "[Errno 2] No such file or directory: 'data/images/clockwise/sw_image_35.png'",
+        "extraction": "",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_1.png",
@@ -285,7 +355,9 @@
         "answer": "2",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The triangle labeled \"4\" is not similar to the other triangles. The other three triangles (1, 2, and 3) are similar to each other."
+        "model_answer": "The triangle labeled \"4\" is not similar to the other triangles. The other three triangles (1, 2, and 3) are similar to each other.",
+        "extraction": "4",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_2.png",
@@ -293,7 +365,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The triangle labeled \"3\" is not similar to the other triangles. The other triangles (1, 2, and 4) have similar shapes and angles, while triangle 3 has a different shape and angles."
+        "model_answer": "The triangle labeled \"3\" is not similar to the other triangles. The other triangles (1, 2, and 4) have similar shapes and angles, while triangle 3 has a different shape and angles.",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_3.png",
@@ -301,7 +375,9 @@
         "answer": "4",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is larger in size compared to the diamonds labeled \"1\", \"3\", and \"4\"."
+        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is larger in size compared to the diamonds labeled \"1\", \"3\", and \"4\".",
+        "extraction": "2",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_4.png",
@@ -309,7 +385,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is smaller in size compared to the diamonds labeled \"1\", \"3\", and \"4\"."
+        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is smaller in size compared to the diamonds labeled \"1\", \"3\", and \"4\".",
+        "extraction": "2",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_5.png",
@@ -317,7 +395,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is smaller and has a different shape compared to the diamonds labeled \"1\", \"3\", and \"4\"."
+        "model_answer": "The diamond labeled \"2\" is not similar to the other diamonds. It is smaller and has a different shape compared to the diamonds labeled \"1\", \"3\", and \"4\".",
+        "extraction": "2",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_6.png",
@@ -325,7 +405,9 @@
         "answer": "1",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the black heart (leftmost heart) is indicated by the number \"1\"."
+        "model_answer": "The shape that is geometrically similar to the black heart (leftmost heart) is indicated by the number \"1\".",
+        "extraction": "1",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_7.png",
@@ -333,7 +415,9 @@
         "answer": "1",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\"."
+        "model_answer": "The shape that is geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\".",
+        "extraction": "2",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_8.png",
@@ -341,7 +425,9 @@
         "answer": "2",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\"."
+        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\".",
+        "extraction": "2",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_9.png",
@@ -349,7 +435,9 @@
         "answer": "2",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\"."
+        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is indicated by the number \"2\".",
+        "extraction": "2",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_10.png",
@@ -357,7 +445,9 @@
         "answer": "2",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is the one indicated by the number \"2\"."
+        "model_answer": "The shape that is not geometrically similar to the black heart (leftmost heart) is the one indicated by the number \"2\".",
+        "extraction": "2",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_11.png",
@@ -365,7 +455,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the black star (leftmost star) is indicated by the number \"1\"."
+        "model_answer": "The shape that is geometrically similar to the black star (leftmost star) is indicated by the number \"1\".",
+        "extraction": "1",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_12.png",
@@ -373,7 +465,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the black star (leftmost star) is indicated by the number \"3\"."
+        "model_answer": "The shape that is geometrically similar to the black star (leftmost star) is indicated by the number \"3\".",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_13.png",
@@ -381,7 +475,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the black star is indicated by the number \"3\"."
+        "model_answer": "The shape that is geometrically similar to the black star is indicated by the number \"3\".",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_14.png",
@@ -389,7 +485,9 @@
         "answer": "Shape II and III",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "In the image, shape II and III are geometrically similar."
+        "model_answer": "In the image, shape II and III are geometrically similar.",
+        "extraction": "ii and iii",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_15.png",
@@ -397,7 +495,9 @@
         "answer": "Shape II and III",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "In the image, shape I and IV are geometrically similar."
+        "model_answer": "In the image, shape I and IV are geometrically similar.",
+        "extraction": "shape i and iv",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_16.png",
@@ -405,7 +505,9 @@
         "answer": "Shape I and III",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "In the image, shape I and IV are geometrically similar."
+        "model_answer": "In the image, shape I and IV are geometrically similar.",
+        "extraction": "i and iv",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_17.png",
@@ -413,7 +515,9 @@
         "answer": "C, D",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The shapes that are geometrically similar to shape A (a square) are shapes that are also squares. In the image, shapes D and E are squares.\n\nTherefore, the answer is: D, E."
+        "model_answer": "The shapes that are geometrically similar to shape A (a square) are shapes that are also squares. In the image, shapes D and E are squares.\n\nTherefore, the answer is: D, E.",
+        "extraction": "d, e",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_18.png",
@@ -421,7 +525,9 @@
         "answer": "C, D",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The shapes that are geometrically similar to shape A (a square) are B, D, and E (all squares). \n\nSo, the answer is: B, D, E."
+        "model_answer": "The shapes that are geometrically similar to shape A (a square) are B, D, and E (all squares). \n\nSo, the answer is: B, D, E.",
+        "extraction": "b, d, e",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_19.png",
@@ -429,7 +535,9 @@
         "answer": "C, D",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The shapes that are geometrically similar to shape A are B, D, and E.\n\nSo, the answer is: B, D, E."
+        "model_answer": "The shapes that are geometrically similar to shape A are B, D, and E.\n\nSo, the answer is: B, D, E.",
+        "extraction": "b, d, e",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_20.png",
@@ -437,7 +545,9 @@
         "answer": "C, D",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The shapes that are geometrically similar to shape A (a square) are B, D, and E (all squares).\n\nSo, the answer is: B, D, E."
+        "model_answer": "The shapes that are geometrically similar to shape A (a square) are B, D, and E (all squares).\n\nSo, the answer is: B, D, E.",
+        "extraction": "b, d, e",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_21.png",
@@ -445,7 +555,9 @@
         "answer": "yellow",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the red star is the blue star. Therefore, the color of that star is “blue”."
+        "model_answer": "The shape that is geometrically similar to the red star is the blue star. Therefore, the color of that star is “blue”.",
+        "extraction": "blue",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_22.png",
@@ -453,7 +565,9 @@
         "answer": "yellow",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The blue star is geometrically similar to the red star. Therefore, the color of the star that is geometrically similar to the red star is “blue”."
+        "model_answer": "The blue star is geometrically similar to the red star. Therefore, the color of the star that is geometrically similar to the red star is “blue”.",
+        "extraction": "yellow",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_23.png",
@@ -461,7 +575,9 @@
         "answer": "purple",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The blue triangle is geometrically similar to the red triangle."
+        "model_answer": "The blue triangle is geometrically similar to the red triangle.",
+        "extraction": "blue",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_24.png",
@@ -469,7 +585,9 @@
         "answer": "purple",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The shape that is geometrically similar to the red triangle is the green triangle."
+        "model_answer": "The shape that is geometrically similar to the red triangle is the green triangle.",
+        "extraction": "green",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_25.png",
@@ -477,7 +595,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is \"3\". \n\nIn pair 3, the shapes are a square and a shape with a cut-off corner, which are not similar geometrically. The other pairs (1 and 2) consist of shapes that are similar to each other (triangles and circles, respectively)."
+        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is \"3\". \n\nIn pair 3, the shapes are a square and a shape with a cut-off corner, which are not similar geometrically. The other pairs (1 and 2) consist of shapes that are similar to each other (triangles and circles, respectively).",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_26.png",
@@ -485,7 +605,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is pair \"3\". \n\nIn pair \"3\", the shapes are not similar because the top shape has an additional cut-out corner, making it a different shape from the bottom rectangle. In contrast, pairs \"1\" and \"2\" consist of shapes that are similar to each other (triangles and circles, respectively)."
+        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is pair \"3\". \n\nIn pair \"3\", the shapes are not similar because the top shape has an additional cut-out corner, making it a different shape from the bottom rectangle. In contrast, pairs \"1\" and \"2\" consist of shapes that are similar to each other (triangles and circles, respectively).",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_27.png",
@@ -493,7 +615,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is pair \"3\". The shapes in pair 3 are not similar because they do not have the same shape, even though they may appear to be related. The other pairs (1 and 2) consist of shapes that are similar, meaning they have the same shape but may differ in size or orientation."
+        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is pair \"3\". The shapes in pair 3 are not similar because they do not have the same shape, even though they may appear to be related. The other pairs (1 and 2) consist of shapes that are similar, meaning they have the same shape but may differ in size or orientation.",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_28.png",
@@ -501,7 +625,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is “3”. The shapes in pair 3 are not similar because their proportions and angles differ, unlike the shapes in pairs 1 and 2, which maintain the same proportions and angles."
+        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is “3”. The shapes in pair 3 are not similar because their proportions and angles differ, unlike the shapes in pairs 1 and 2, which maintain the same proportions and angles.",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_29.png",
@@ -509,7 +635,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is \"3\". \n\nIn pair 3, the shapes are not similar because they do not have the same shape; one is a heart shape, and the other is a different shape that does not resemble the heart shape geometrically."
+        "model_answer": "The pair that is not in a similarity relationship (in the sense of geometry) is \"3\". \n\nIn pair 3, the shapes are not similar because they do not have the same shape; one is a heart shape, and the other is a different shape that does not resemble the heart shape geometrically.",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_30.png",
@@ -517,7 +645,9 @@
         "answer": "A",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\"."
+        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\".",
+        "extraction": "a",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_31.png",
@@ -525,7 +655,9 @@
         "answer": "A",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\"."
+        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\".",
+        "extraction": "a",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_32.png",
@@ -533,7 +665,9 @@
         "answer": "A",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\"."
+        "model_answer": "The shape that is geometrically similar to the red oval is labeled \"A\".",
+        "extraction": "a",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_33.png",
@@ -541,7 +675,9 @@
         "answer": "3",
         "skill": "similarity",
         "difficulty": "easy",
-        "model_answer": "The hexagon labeled \"3\" is not similar to the other hexagons. The other hexagons (1, 2, and 4) have six sides, while the hexagon labeled \"3\" has five sides."
+        "model_answer": "The hexagon labeled \"3\" is not similar to the other hexagons. The other hexagons (1, 2, and 4) have six sides, while the hexagon labeled \"3\" has five sides.",
+        "extraction": "3",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_34.png",
@@ -549,7 +685,9 @@
         "answer": "4",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. The other rectangles (1, 2, and 4) are larger in size compared to rectangle 3."
+        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. The other rectangles (1, 2, and 4) are larger in size compared to rectangle 3.",
+        "extraction": "3",
+        "judgment": 0
     },
     {
         "image_dir": "similarity/sw_image_35.png",
@@ -557,7 +695,9 @@
         "answer": "4",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. It is smaller in size compared to the rectangles labeled \"1\", \"2\", and \"4\"."
+        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. It is smaller in size compared to the rectangles labeled \"1\", \"2\", and \"4\".",
+        "extraction": "4",
+        "judgment": 1
     },
     {
         "image_dir": "similarity/sw_image_36.png",
@@ -565,6 +705,8 @@
         "answer": "4",
         "skill": "similarity",
         "difficulty": "medium",
-        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. The other rectangles (1, 2, and 4) are larger in size, while rectangle 3 is smaller. Therefore, the number label indicating the rectangle that is not similar is \"3\"."
+        "model_answer": "The rectangle labeled \"3\" is not similar to the other rectangles. The other rectangles (1, 2, and 4) are larger in size, while rectangle 3 is smaller. Therefore, the number label indicating the rectangle that is not similar is \"3\".",
+        "extraction": "3",
+        "judgment": 0
     }
 ]
