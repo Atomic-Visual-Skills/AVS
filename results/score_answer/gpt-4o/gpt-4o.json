@@ -1,0 +1,912 @@
+[
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a counterclockwise orientation with respect to the red dot, while arrow D is pointing in a clockwise orientation. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing towards the red dot, while arrow E is pointing away from the red dot. Therefore, arrow E is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, and D are pointing towards the blue dot, while arrow C is pointing away from the blue dot. Therefore, arrow C is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "C",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are all pointing towards the blue dot at the center. Since all arrows are pointing inward towards the blue dot, none of the arrows are in an orientation distinct from the others. They all share the same inward orientation.",
+        "extraction": "None",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, and C are pointing in a counterclockwise direction with respect to the blue dot, while arrow D is pointing in a clockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing towards the blue dot, while arrow F is pointing away from the blue dot. Therefore, arrow F is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing in a counterclockwise direction around the blue dot. However, arrow F is pointing in a clockwise direction. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, C, D, and E are all pointing towards the blue dot, indicating an inward orientation. However, arrow F is pointing away from the blue dot, indicating an outward orientation. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing in a counterclockwise orientation with respect to the black dot. However, arrow E is pointing in a clockwise orientation. Therefore, arrow E is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a clockwise direction, while arrow D is pointing in a counterclockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"c\" in the circle, the next letter clockwise is \"y\".",
+        "extraction": "y",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_12.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “r”?",
+        "answer": "p",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"r\" in the circle, the next letter clockwise is \"p\".",
+        "extraction": "p",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_13.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “r”?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"r\" is \"A\".",
+        "extraction": "A",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_14.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “F”?",
+        "answer": "E",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"F\" is \"c\".",
+        "extraction": "c",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_15.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a counterclockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ArGW",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a counterclockwise order starting from A, are \"ArGW\".",
+        "extraction": "ArGW",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_16.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a clockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "AWGr",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a clockwise order starting from A, are \"A W G r\".",
+        "extraction": "AWGr",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_17.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, R, K, and N. Therefore, the answer is \"ARKN\".",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_18.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in clockwise order starting from A are: ARKN.",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_19.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, N, K, and R. Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_20.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in counterclockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ANKR",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image are A, R, K, and N. Reading them in counterclockwise order starting from A, the sequence is \"A, N, K, R\". Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a counterclockwise orientation with respect to the red dot, while arrow D is pointing in a clockwise orientation. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing towards the red dot, while arrow E is pointing away from the red dot. Therefore, arrow E is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, and D are pointing towards the blue dot, while arrow C is pointing away from the blue dot. Therefore, arrow C is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "C",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are all pointing towards the blue dot at the center. Since all arrows are pointing inward towards the blue dot, none of the arrows are in an orientation distinct from the others. They all share the same inward orientation.",
+        "extraction": "None",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, and C are pointing in a counterclockwise direction with respect to the blue dot, while arrow D is pointing in a clockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing towards the blue dot, while arrow F is pointing away from the blue dot. Therefore, arrow F is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing in a counterclockwise direction around the blue dot. However, arrow F is pointing in a clockwise direction. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, C, D, and E are all pointing towards the blue dot, indicating an inward orientation. However, arrow F is pointing away from the blue dot, indicating an outward orientation. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing in a counterclockwise orientation with respect to the black dot. However, arrow E is pointing in a clockwise orientation. Therefore, arrow E is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a clockwise direction, while arrow D is pointing in a counterclockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"c\" in the circle, the next letter clockwise is \"y\".",
+        "extraction": "y",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_12.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “r”?",
+        "answer": "p",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"r\" in the circle, the next letter clockwise is \"p\".",
+        "extraction": "p",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_13.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “r”?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"r\" is \"A\".",
+        "extraction": "A",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_14.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “F”?",
+        "answer": "E",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"F\" is \"c\".",
+        "extraction": "c",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_15.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a counterclockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ArGW",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a counterclockwise order starting from A, are \"ArGW\".",
+        "extraction": "ArGW",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_16.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a clockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "AWGr",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a clockwise order starting from A, are \"A W G r\".",
+        "extraction": "AWGr",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_17.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, R, K, and N. Therefore, the answer is \"ARKN\".",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_18.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in clockwise order starting from A are: ARKN.",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_19.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, N, K, and R. Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_20.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in counterclockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ANKR",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image are A, R, K, and N. Reading them in counterclockwise order starting from A, the sequence is \"A, N, K, R\". Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a counterclockwise orientation with respect to the red dot, while arrow D is pointing in a clockwise orientation. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing towards the red dot, while arrow E is pointing away from the red dot. Therefore, arrow E is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, and D are pointing towards the blue dot, while arrow C is pointing away from the blue dot. Therefore, arrow C is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "C",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are all pointing towards the blue dot at the center. Since all arrows are pointing inward towards the blue dot, none of the arrows are in an orientation distinct from the others. They all share the same inward orientation.",
+        "extraction": "None",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, and C are pointing in a counterclockwise direction with respect to the blue dot, while arrow D is pointing in a clockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing towards the blue dot, while arrow F is pointing away from the blue dot. Therefore, arrow F is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing in a counterclockwise direction around the blue dot. However, arrow F is pointing in a clockwise direction. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, C, D, and E are all pointing towards the blue dot, indicating an inward orientation. However, arrow F is pointing away from the blue dot, indicating an outward orientation. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing in a counterclockwise orientation with respect to the black dot. However, arrow E is pointing in a clockwise orientation. Therefore, arrow E is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a clockwise direction, while arrow D is pointing in a counterclockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"c\" in the circle, the next letter clockwise is \"y\".",
+        "extraction": "y",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_12.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “r”?",
+        "answer": "p",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"r\" in the circle, the next letter clockwise is \"p\".",
+        "extraction": "p",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_13.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “r”?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"r\" is \"A\".",
+        "extraction": "A",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_14.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “F”?",
+        "answer": "E",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"F\" is \"c\".",
+        "extraction": "c",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_15.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a counterclockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ArGW",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a counterclockwise order starting from A, are \"ArGW\".",
+        "extraction": "ArGW",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_16.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a clockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "AWGr",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a clockwise order starting from A, are \"A W G r\".",
+        "extraction": "AWGr",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_17.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, R, K, and N. Therefore, the answer is \"ARKN\".",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_18.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in clockwise order starting from A are: ARKN.",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_19.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, N, K, and R. Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_20.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in counterclockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ANKR",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image are A, R, K, and N. Reading them in counterclockwise order starting from A, the sequence is \"A, N, K, R\". Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a counterclockwise orientation with respect to the red dot, while arrow D is pointing in a clockwise orientation. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing towards the red dot, while arrow E is pointing away from the red dot. Therefore, arrow E is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, and D are pointing towards the blue dot, while arrow C is pointing away from the blue dot. Therefore, arrow C is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "C",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are all pointing towards the blue dot at the center. Since all arrows are pointing inward towards the blue dot, none of the arrows are in an orientation distinct from the others. They all share the same inward orientation.",
+        "extraction": "None",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, and C are pointing in a counterclockwise direction with respect to the blue dot, while arrow D is pointing in a clockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing towards the blue dot, while arrow F is pointing away from the blue dot. Therefore, arrow F is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing in a counterclockwise direction around the blue dot. However, arrow F is pointing in a clockwise direction. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, C, D, and E are all pointing towards the blue dot, indicating an inward orientation. However, arrow F is pointing away from the blue dot, indicating an outward orientation. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing in a counterclockwise orientation with respect to the black dot. However, arrow E is pointing in a clockwise orientation. Therefore, arrow E is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a clockwise direction, while arrow D is pointing in a counterclockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"c\" in the circle, the next letter clockwise is \"y\".",
+        "extraction": "y",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_12.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “r”?",
+        "answer": "p",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"r\" in the circle, the next letter clockwise is \"p\".",
+        "extraction": "p",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_13.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “r”?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"r\" is \"A\".",
+        "extraction": "A",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_14.png",
+        "question": "There is a circle with letters in the image. If we read the letters counterclockwise, what comes after “F”?",
+        "answer": "E",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "If we read the letters counterclockwise, the letter that comes after \"F\" is \"c\".",
+        "extraction": "c",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_15.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a counterclockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ArGW",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a counterclockwise order starting from A, are \"ArGW\".",
+        "extraction": "ArGW",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_16.png",
+        "question": "There is a closed curve with letters in the image. Read the letters in a clockwise order starting from A (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "AWGr",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the closed curve, read in a clockwise order starting from A, are \"A W G r\".",
+        "extraction": "AWGr",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_17.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, R, K, and N. Therefore, the answer is \"ARKN\".",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_18.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in clockwise order starting from A are: ARKN.",
+        "extraction": "ARKN",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_19.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in clockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ARKN",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image, starting from A and reading in a clockwise order, are A, N, K, and R. Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_20.png",
+        "question": "There are four alphabet letters in the given image. Starting from A, read the letters in counterclockwise order (including A). For example, if you can read A, B, C, and D, your answer should be “ABCD”.",
+        "answer": "ANKR",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "The letters in the image are A, R, K, and N. Reading them in counterclockwise order starting from A, the sequence is \"A, N, K, R\". Therefore, the answer is \"ANKR\".",
+        "extraction": "ANKR",
+        "judgment": 1
+    },
+    {
+        "image_dir": "clockwise/sw_image_1.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a counterclockwise orientation with respect to the red dot, while arrow D is pointing in a clockwise orientation. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_2.png",
+        "question": "In the picture, a red dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the red dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing towards the red dot, while arrow E is pointing away from the red dot. Therefore, arrow E is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_3.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "D",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, and D are pointing towards the blue dot, while arrow C is pointing away from the blue dot. Therefore, arrow C is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "C",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_4.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are all pointing towards the blue dot at the center. Since all arrows are pointing inward towards the blue dot, none of the arrows are in an orientation distinct from the others. They all share the same inward orientation.",
+        "extraction": "None",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_5.png",
+        "question": "In the picture, a blue dot and four arrows labeled A, B, C, and D are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, and D, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "A",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, and C are pointing in a counterclockwise direction with respect to the blue dot, while arrow D is pointing in a clockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_6.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing towards the blue dot, while arrow F is pointing away from the blue dot. Therefore, arrow F is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_7.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, D, and E are all pointing in a counterclockwise direction around the blue dot. However, arrow F is pointing in a clockwise direction. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_8.png",
+        "question": "In the picture, a blue dot and six arrows labeled A, B, C, D, E, and F are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the blue dot. Among arrows A, B, C, D, E, and F which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "C",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the image, arrows A, B, C, D, and E are all pointing towards the blue dot, indicating an inward orientation. However, arrow F is pointing away from the blue dot, indicating an outward orientation. Therefore, arrow F is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "F",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_9.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and D are pointing in a counterclockwise orientation with respect to the black dot. However, arrow E is pointing in a clockwise orientation. Therefore, arrow E is the one most likely to point in an orientation distinct from the others.",
+        "extraction": "E",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_10.png",
+        "question": "In the picture, a black dot and five arrows labeled A, B, C, D, and E are drawn. Each arrow points in a clockwise or counterclockwise orientation with respect to the black dot. Among arrows A, B, C, D and E, which arrow is most likely to point in an orientation distinct from the others?",
+        "answer": "B",
+        "skill": "clockwise",
+        "difficulty": "medium",
+        "model_answer": "In the picture, arrows A, B, C, and E are pointing in a clockwise direction, while arrow D is pointing in a counterclockwise direction. Therefore, arrow D is the one that is most likely to point in an orientation distinct from the others.",
+        "extraction": "D",
+        "judgment": 0
+    },
+    {
+        "image_dir": "clockwise/sw_image_11.png",
+        "question": "There is a circle with letters in the image. If we read the letters clockwise, what comes after “c”?",
+        "answer": "y",
+        "skill": "clockwise",
+        "difficulty": "easy",
+        "model_answer": "After \"c\" in the circle, the next letter clockwise is \"y\".",
+        "extraction": "y",
+        "judgment": 1
+    }
+]
