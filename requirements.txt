@@ -1,4 +1,35 @@
+# common
 python-dotenv
+pillow
+tqdm
 
-[optional]
+# gpt-4o
 openai
+
+# llava
+transformers
+accelerate
+bitsandbytes
+sentencepiece
+protobuf
+
+
+# math-llava
+einops
+
+
+# Intern-VL
+timm
+
+
+# Phi
+flash-attn
+
+# deepseek
+attrdict
+
+# gemini
+google-generativeai
+
+# claude
+gnthropic

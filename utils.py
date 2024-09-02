@@ -2,12 +2,16 @@ import base64
 import json
 import os
 from openai import OpenAI
+from PIL import Image
 
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
     
+def open_image(image_path):
+    return Image.open(image_path)
+
 def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
