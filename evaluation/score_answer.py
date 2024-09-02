@@ -103,8 +103,8 @@ if __name__ == '__main__':
         printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgment']])}", args.verbose)
 
         if (i+1) % args.save_every == 0 or i == len(results)-1:
-            print(f"Saving results to {args.save_file}...")
+            printv(f"Saving results to {args.save_file}...", args.verbose)
             write_json(args.save_file, save_results)
-            print(f"Results saved.")
+            printv(f"Results saved.", args.verbose)
     
      
