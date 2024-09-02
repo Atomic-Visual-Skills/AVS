@@ -27,3 +27,9 @@ flash-attn
 
 # deepseek
 attrdict
+
+# gemini
+google-generativeai
+
+# claude
+gnthropic

@@ -4,6 +4,15 @@ def load_model(model, size=None, *args, **kwargs):
     if model == 'gpt-4o':
         from .GPT_4o import GPT_4o
         return GPT_4o('gpt-4o', *args, **kwargs)
+    elif model == 'gemini':
+        from .Gemini import Gemini
+        return Gemini('gemini-1.5-pro', *args, **kwargs)
+    elif model == 'claude':
+        from .Claude import Claude
+        return Claude('claude-3-5-sonnet-20240620', *args, **kwargs)
+    elif model == 'qwen':
+        from .Qwen import Qwen
+        return Qwen('qwen-vl-max-0809')
     elif model == 'llava':
         from .LLaVA import LLaVA
         if size == None:

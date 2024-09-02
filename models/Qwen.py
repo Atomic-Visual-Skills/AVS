@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 
 
-class GPT_4o(ModelInterface):
+class Qwen(ModelInterface):
     def __init__(self, model, temperature=0, max_tokens=1024):
         self.model = model
         self.temperature = temperature
@@ -18,8 +18,8 @@ class GPT_4o(ModelInterface):
 
         dotenv_file = find_dotenv()
         load_dotenv(dotenv_file)
-        api_key = os.environ.get('OPENAI_API_KEY')
-        self.client = OpenAI(api_key=api_key)
+        api_key = os.environ.get('DASHSCOPE_API_KEY')
+        self.client = OpenAI(api_key=api_key, base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",)
 
     def run(self, image_path, prompt):
         base64_image = encode_image(image_path)
@@ -34,8 +34,7 @@ class GPT_4o(ModelInterface):
                     {
                         "type": "image_url",
                         "image_url": {
-                            "url": f"data:image/png;base64,{base64_image}",
-                            "detail": "high"
+                            "url": f"data:image/png;base64,{base64_image}"
                         },
                     },
                 ],
