@@ -15,33 +15,33 @@ from prompts import sys_prompt, demo_prompt_score
 
 
 # load demo prompt
-def verify_judgment(judgment):
-    judgment = judgment.strip()
-    if judgment == None or judgment not in ['0', '1']:
+def verify_judgment(judgement):
+    judgment = judgement.strip()
+    if judgement == None or judgement not in ['0', '1']:
         return False
     return True
 
 
-def create_test_prompt(demo_prompt, inst):
+def create_test_prompt(demo_prompt, answer, extraction):
     demo_prompt = demo_prompt.strip()
-    test_prompt = f"[Standard Answer] {inst['answer']}\n[Model Answer] {inst['extraction']}\nJudgment: "
+    test_prompt = f"[Standard Answer] {answer}\n[Model Answer] {extraction}\nJudgment: "
     full_prompt = f"{demo_prompt}\n\n{test_prompt}"
     return full_prompt
 
 
-def match_answer(inst, api_key, exact_match=False, verbose=False):
+def match_answer(answer, extraction, api_key, exact_match=False, verbose=False):
     # quick match
     if exact_match:
-        return '1' if inst['answer'] == inst['extraction'] else '0'
+        return '1' if answer == extraction else '0'
     # general extraction
     try:
-        test_prompt = create_test_prompt(demo_prompt_score, inst)
-        judgment = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
+        test_prompt = create_test_prompt(demo_prompt_score, answer, extraction)
+        judgement = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
         # sometimes gpt may return 'Judgment: 1' or 'Judgment: 0'
-        return judgment.lower().replace("judgment:", "").strip()
+        return judgement.lower().replace("judgment:", "").strip()
     except Exception as e:
         printv(e, verbose)
-        print(f"Error in matching answer:\n[Standard Answer] {inst['answer']}\n[Model Answer] {inst['extraction']}")
+        print(f"Error in matching answer:\n[Standard Answer] {answer}\n[Model Answer] {extraction}")
     return ""
 
 
@@ -62,7 +62,6 @@ if __name__ == '__main__':
     parser.add_argument('--exact_match', action='store_true', help='use exact match to match answer for some problems')
     # output
     parser.add_argument('--save_every', type=int, default=10, help='save every n problems')
-    parser.add_argument('--cache', action='store_true', help='cache results')
     parser.add_argument('--trunk_response', type=int, default=-1, help='trunk response to the last n words')
     parser.add_argument('--verbose', '-v', action='store_true', help='verbose mode')
     # args
@@ -78,33 +77,32 @@ if __name__ == '__main__':
     printv(f"Reading {result_file}...", args.verbose)
     results = read_json(result_file)
 
-    os.makedirs(os.path.dirname(args.output), exist_ok=True)
-    if os.path.exists(args.output):
-        save_results = json.load(open(args.output))
-    else:
-        save_results = []
+    save_results = []
 
     score_dict = defaultdict(lambda: defaultdict(list))
     score_version_dict = defaultdict(list)
     # tqdm, enumerate results
     for i, inst in enumerate(tqdm(results)):
-        save_inst = save_results[i] if i < len(save_results) else copy.deepcopy(inst)
-        if args.cache and 'judgment' in save_inst:
-            pass
-        else:
-            judgment = match_answer(save_inst, api_key, args.exact_match)
+        save_inst = copy.deepcopy(inst)
+        
+        judgements = list(map(lambda x: match_answer(save_inst['answer'], x, api_key, args.exact_match), save_inst['extraction']))
+            
+        for j in range(len(judgements)):
             while True:
-                if not verify_judgment(judgment):
-                    print('Wrong judgment format: ', judgment)
-                    judgment = match_answer(save_inst, api_key, args.exact_match)
+                if not verify_judgment(judgements[j]):
+                    print('Wrong judgment format: ', judgements[j])
+                    judgements[j] = match_answer(save_inst['answer'], save_inst['extraction'][j], api_key, args.exact_match)
                 else:
-                    save_inst['judgment'] = int(judgment)
+                    judgements[j] = int(judgements[j])
                     break
 
-            save_results.append(save_inst)
+        save_inst['judgements'] = judgements
+        save_inst['judgement'] = majority_voting(judgements)
+
+        save_results.append(save_inst)
 
         # judgment statistics
-        printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgment']])}", args.verbose)
+        printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgement']])}", args.verbose)
 
         if (i+1) % args.save_every == 0 or i == len(results)-1:
             printv(f"Saving results to {args.output}...", args.verbose)

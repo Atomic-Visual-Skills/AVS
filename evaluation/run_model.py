@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 import models
 
-def run_model(model: models.ModelInterface, data, cot, image_dir):
+def run_model(model: models.ModelInterface, data, cot, image_dir, n):
     result = []
     errors = []
 
@@ -21,16 +21,19 @@ def run_model(model: models.ModelInterface, data, cot, image_dir):
 
         image_path = os.path.join(image_dir, item['image_dir'])
 
-        try:
-            output = model.run(image_path, prompt)
-        except Exception as e:
-            errors.append(item['image_dir'])
-            output = str(e)     # for debugging
-            # output = ''         # TODO: change to this!
+        outputs = []
+
+        for _ in range(n):
+            try:
+                outputs.append(model.run(image_path, prompt))
+            except Exception as e:
+                errors.append(item['image_dir'])
+                outputs.append(str(e))     # for debugging
+                # output.append('')       # TODO: change to this!
 
         result.append({
             **item,
-            'model_answer': output
+            'model_answer': outputs
         })
 
     for error in errors:
@@ -47,13 +50,14 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str, required=True, help='Name of the model',
                         choices=['gpt-4o', 'gemini', 'claude', 'qwen', 'llava', 'llava-ov', 'mllava', 'intern-vl', 'phi', 'deepseek-vl', 'custom'])
     parser.add_argument('--cot', action='store_true', help='Use chain of thought')
-    parser.add_argument('--size', type=str, required=False, default=None)
+    parser.add_argument('--size', type=str, required=False, default=None, help='Size of the model')
+    parser.add_argument('--n', type=int, default=3, help='Number of answers for each question')
     args = parser.parse_args()
 
     data = read_json(args.input)
     model = models.load_model(args.model, args.size)
     image_dir = os.path.join(os.path.dirname(args.input), 'images')
 
-    result = run_model(model, data, args.cot, image_dir)
+    result = run_model(model, data, args.cot, image_dir, args.n)
 
     write_json(args.output, result)

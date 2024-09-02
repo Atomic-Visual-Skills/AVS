@@ -57,7 +57,6 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str)
     parser.add_argument('--output', type=str)
     parser.add_argument('--save_every', type=int, default=10, help='save every n problems')
-    parser.add_argument('--cache', action='store_true', help='cache results')
     parser.add_argument('--trunk_response', type=int, default=-1, help='trunk response to the last n words')
     parser.add_argument('--verbose', '-v', action='store_true', help='verbose mode')
     # args
@@ -73,35 +72,29 @@ if __name__ == '__main__':
     printv(f"Reading {result_file}...", args.verbose)
     results = read_json(result_file)
 
-    os.makedirs(os.path.dirname(args.output), exist_ok=True)
-    if os.path.exists(args.output):
-        save_results = json.load(open(args.output))
-    else:
-        save_results = []
+    save_results = []
 
     # enumerate results
     for i, inst in enumerate(tqdm(results)):
-        save_inst = save_results[i] if i < len(save_results) else copy.deepcopy(inst)
-        if args.cache and 'extraction' in save_inst:
-            pass
+        save_inst = copy.deepcopy(inst)
+        if 'model_answer' in save_inst:
+            response = save_inst['model_answer']  
         else:
-            if 'model_answer' in save_inst:
-                response = save_inst['model_answer']  
-            else:
-                response = ''
-                printv(save_inst, args.verbose)
-                printv("######### NO MODEL ANSWER ###########", args.verbose)  # some model may output nothing due to safety issue
-            response = trunk_response(response, args.trunk_response)
-
-            save_inst['extraction'] = extract_answer(save_inst['question'], response, api_key, args.verbose)
-
-            # verify extraction
-            if not verify_extraction(save_inst['extraction']):
-                save_inst['extraction'] = ''
-                printv(save_inst, args.verbose)
-                printv("######### NO VALID EXTRACTION ###########", args.verbose)
+            response = ''
+            printv(save_inst, args.verbose)
+            printv("######### NO MODEL ANSWER ###########", args.verbose)  # some model may output nothing due to safety issue
             
-            save_results.append(save_inst)
+        response = map(lambda x: trunk_response(x, args.trunk_response), response)
+
+        save_inst['extraction'] = list(map(lambda x: extract_answer(save_inst['question'], x, api_key, args.verbose), response))
+
+        # verify extraction
+        # if not verify_extraction(save_inst['extraction']):
+        #     save_inst['extraction'] = ''
+        #     printv(save_inst, args.verbose)
+        #     printv("######### NO VALID EXTRACTION ###########", args.verbose)
+            
+        save_results.append(save_inst)
 
         if (i+1) % args.save_every == 0 or i == len(results) - 1:
             printv(f"Saving results to {args.output}...", args.verbose)

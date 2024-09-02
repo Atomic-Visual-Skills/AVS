@@ -35,3 +35,9 @@ def get_evaluation_chat_response(sys_prompt, user_prompt, api_key):
 def printv(print_content, verbose):
     if verbose:
         print(print_content)
+
+def majority_voting(lst):
+    if lst.count(0) > lst.count(1):
+        return 0
+    else:
+        return 1
