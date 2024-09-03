@@ -15,16 +15,16 @@ from prompts import sys_prompt, demo_prompt_score
 
 
 # load demo prompt
-def verify_judgment(judgement):
-    judgement = judgement.strip()
-    if judgement == None or judgement not in ['0', '1']:
+def verify_judgment(judgment):
+    judgment = judgment.strip()
+    if judgment == None or judgment not in ['0', '1']:
         return False
     return True
 
 
 def create_test_prompt(demo_prompt, answer, extraction):
     demo_prompt = demo_prompt.strip()
-    test_prompt = f"[Standard Answer] {answer}\n[Model Answer] {extraction}\nJudgment: "
+    test_prompt = f"[Standard Answer] {answer}\n[Model Answer] {extraction}\njudgment: "
     full_prompt = f"{demo_prompt}\n\n{test_prompt}"
     return full_prompt
 
@@ -36,9 +36,9 @@ def match_answer(answer, extraction, api_key, exact_match=False, verbose=False):
     # general extraction
     try:
         test_prompt = create_test_prompt(demo_prompt_score, answer, extraction)
-        judgement = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
-        # sometimes gpt may return 'Judgment: 1' or 'Judgment: 0'
-        return judgement.lower().replace("judgment:", "").strip()
+        judgment = get_evaluation_chat_response(sys_prompt, test_prompt, api_key)
+        # sometimes gpt may return 'judgment: 1' or 'judgment: 0'
+        return judgment.lower().replace("judgment:", "").strip()
     except Exception as e:
         printv(e, verbose)
         print(f"Error in matching answer:\n[Standard Answer] {answer}\n[Model Answer] {extraction}")
@@ -85,19 +85,19 @@ if __name__ == '__main__':
     for i, inst in enumerate(tqdm(results)):
         save_inst = copy.deepcopy(inst)
         
-        judgements = list(map(lambda x: match_answer(save_inst['answer'], x, api_key, args.exact_match), save_inst['extraction']))
+        judgments = list(map(lambda x: match_answer(save_inst['answer'], x, api_key, args.exact_match), save_inst['extraction']))
             
-        for j in range(len(judgements)):
+        for j in range(len(judgments)):
             while True:
-                if not verify_judgment(judgements[j]):
-                    print('Wrong judgment format: ', judgements[j])
-                    judgements[j] = match_answer(save_inst['answer'], save_inst['extraction'][j], api_key, args.exact_match)
+                if not verify_judgment(judgments[j]):
+                    print('Wrong judgment format: ', judgments[j])
+                    judgments[j] = match_answer(save_inst['answer'], save_inst['extraction'][j], api_key, args.exact_match, args.verbose)
                 else:
-                    judgements[j] = int(judgements[j])
+                    judgments[j] = int(judgments[j])
                     break
 
-        save_inst['judgments'] = judgements
-        save_inst['judgment'] = majority_voting(judgements)
+        save_inst['judgments'] = judgments
+        save_inst['judgment'] = majority_voting(judgments)
 
         save_results.append(save_inst)
 
