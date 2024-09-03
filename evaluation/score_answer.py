@@ -16,7 +16,7 @@ from prompts import sys_prompt, demo_prompt_score
 
 # load demo prompt
 def verify_judgment(judgement):
-    judgment = judgement.strip()
+    judgement = judgement.strip()
     if judgement == None or judgement not in ['0', '1']:
         return False
     return True
@@ -96,13 +96,13 @@ if __name__ == '__main__':
                     judgements[j] = int(judgements[j])
                     break
 
-        save_inst['judgements'] = judgements
-        save_inst['judgement'] = majority_voting(judgements)
+        save_inst['judgments'] = judgements
+        save_inst['judgment'] = majority_voting(judgements)
 
         save_results.append(save_inst)
 
         # judgment statistics
-        printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgement']])}", args.verbose)
+        printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgment']])}", args.verbose)
 
         if (i+1) % args.save_every == 0 or i == len(results)-1:
             printv(f"Saving results to {args.output}...", args.verbose)
