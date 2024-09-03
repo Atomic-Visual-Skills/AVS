@@ -5,7 +5,7 @@ Thoroughly read the provided instruction to ensure a solid understanding of the 
 
 demo_prompt_extract = """
 Please read the following example. Then extract the answer from the model response and type it at the end of the prompt.
-If the question requires a full sentence with correct word filled in, please provide the word only.
+If the question requires a full sentence with a correct word filled in, please provide the word only.
 
 Question: There is a single rectangle with multiple color layers in the image. What is the color of the boundary of the rectangle? The answer should be one of ‘red’, ‘yellow’, ‘green’, or ‘blue’.
 Model response: The color of the boundary of the circle is red.
@@ -20,7 +20,7 @@ In the image, shape (A/B) has sides curved inward.
 Model response: In the image, shape B has sides curved inward.
 Extracted answer: B
 
-Question: Choose the phrase in parentheses that correctly describe the image. Rewrite the sentence with the chosen phrase.
+Question: Choose the phrase in parentheses that correctly describes the image. Rewrite the sentence with the chosen phrase.
 In the given image, the green arrow (is longer than/has the same length as/is shorter than) the black arrow.
 Model response: In the given image, the green arrow is longer than the black arrow.
 Extracted answer: is longer than
@@ -58,9 +58,25 @@ Judgment: 0
 [Model Answer] the circle
 Judgment: 1
 
+[Standard Answer] 4
+[Model Answer] shape 4
+Judgment: 1
+
+[Standard Answer] line segment B and C
+[Model Answer] B, C
+Judgment: 1
+
 [Standard Answer] ac
 [Model Answer] ca
 Judgment: 0
+
+[Standard Answer] 2
+[Model Answer] two
+Judgment: 1
+
+[Standard Answer] three
+[Model Answer] 3
+Judgment: 1
 
 [Standard Answer] ['ac', 'ca']
 [Model Answer] ca
