@@ -33,3 +33,6 @@ google-generativeai
 
 # claude
 anthropic
+
+pandas
+matplotlib

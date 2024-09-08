@@ -16,8 +16,7 @@ def run_model(model: models.ModelInterface, data, cot, image_dir, n):
         prompt = item['question']
 
         if cot:
-            # TODO: Add CoT Prompt
-            pass
+            prompt = f'{prompt} Let\'s think step by step.'
 
         image_path = os.path.join(image_dir, item['image_dir'])
 
@@ -54,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--n', type=int, default=3, help='Number of answers for each question')
     args = parser.parse_args()
 
-    data = read_json(args.input)
+    data = read_json(args.input)[:5]
     model = models.load_model(args.model, args.size)
     image_dir = os.path.join(os.path.dirname(args.input), 'images')
 

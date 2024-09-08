@@ -46,5 +46,6 @@ class Claude(ModelInterface):
                     ]
                 }
             ]
-        ).content
+        ).content[0].text
+
         return output

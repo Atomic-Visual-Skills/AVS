@@ -21,8 +21,9 @@ class Gemini(ModelInterface):
 
         genai.configure(api_key=api_key)
         self.model = genai.GenerativeModel(model_name=model)
+        self.generation_config = genai.GenerationConfig(temperature=self.temperature, max_output_tokens=self.max_tokens)
 
     def run(self, image_path, prompt):
         image = open_image(image_path)
-        output = self.model.generate_content([prompt, image], temperature=self.temperature, max_tokens=self.max_tokens).text
+        output = self.model.generate_content([prompt, image], generation_config=self.generation_config).text
         return output
