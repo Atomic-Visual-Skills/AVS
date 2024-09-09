@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parser.add_argument('--input', type=str, required=True, help='Input JSON file path')
     parser.add_argument('--output', type=str, required=True, help='Output JSON file path')
     parser.add_argument('--model', type=str, required=True, help='Name of the model',
-                        choices=['gpt-4o', 'gemini', 'claude', 'qwen', 'llava', 'llava-ov', 'mllava', 'intern-vl', 'phi', 'deepseek-vl', 'custom'])
+                        choices=['gpt-4o', 'gemini', 'claude', 'qwen', 'llava', 'llava-ov', 'mllava', 'table-llava', 'intern-vl', 'phi', 'deepseek-vl', 'custom'])
     parser.add_argument('--cot', action='store_true', help='Use chain of thought')
     parser.add_argument('--size', type=str, required=False, default=None, help='Size of the model')
     parser.add_argument('--n', type=int, default=3, help='Number of answers for each question')

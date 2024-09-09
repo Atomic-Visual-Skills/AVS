@@ -42,6 +42,9 @@ def load_model(model, size=None, *args, **kwargs):
     elif model == 'mllava':
         from .Math_LLaVA import Math_LLaVA
         return Math_LLaVA('Zhiqiang007/Math-LLaVA', *args, **kwargs)
+    elif model == 'table-llava':
+        from .Table_LLaVA import Table_LLaVA
+        return Table_LLaVA('SpursgoZmy/table-llava-v1.5-7b')
     elif model == 'intern-vl':
         from .InternVL import InternVL
         if size == None:
