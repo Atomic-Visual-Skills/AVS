@@ -26,7 +26,7 @@ python evaluation/run_model.py \
 --model intern-vl \
 --input data/test.json \
 --output results/run_model/intern-vl/intern-vl-8b-cot.json \
---size 8b
+--size 8b \
 --cot
 
 # python evaluation/run_model.py \
