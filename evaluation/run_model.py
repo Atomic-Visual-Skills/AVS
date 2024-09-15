@@ -27,8 +27,8 @@ def run_model(model: models.ModelInterface, data, cot, image_dir, n):
                 outputs.append(model.run(image_path, prompt))
             except Exception as e:
                 errors.append(item['image_dir'])
-                outputs.append(str(e))     # for debugging
-                # output.append('')       # TODO: change to this!
+                # outputs.append(str(e))     # for debugging
+                outputs.append('')           # TODO: change to this!
 
         result.append({
             **item,
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--n', type=int, default=3, help='Number of answers for each question')
     args = parser.parse_args()
 
-    data = read_json(args.input)[:5]
+    data = read_json(args.input)
     model = models.load_model(args.model, args.size)
     image_dir = os.path.join(os.path.dirname(args.input), 'images')
 

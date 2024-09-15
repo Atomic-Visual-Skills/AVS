@@ -34,7 +34,7 @@ def get_scores(model_results, verbose=False):
     printv("Getting scores for each model...", verbose=verbose)
     model_avg_scores = {}
     for model in tqdm(model_results.keys()):
-        scores = [d['judgement'] for d in model_results[model]]
+        scores = [d['judgment'] for d in model_results[model]]
         model_avg_scores[model] = {'correct_problems': sum(scores), 'total_problems': len(scores), 'avg_score': np.mean(scores)}
     return model_avg_scores
 
@@ -52,7 +52,7 @@ def get_scores_skill(model_results, verbose=False):
                 raise e
             if skill not in model_skill_avg_scores[model]:
                 model_skill_avg_scores[model][skill] = {'correct_problems': 0, 'total_problems': 0}
-            model_skill_avg_scores[model][skill]['correct_problems'] += entry['judgement']
+            model_skill_avg_scores[model][skill]['correct_problems'] += entry['judgment']
             model_skill_avg_scores[model][skill]['total_problems'] += 1
         for skill in model_skill_avg_scores[model]:
             model_skill_avg_scores[model][skill]['avg_score'] = model_skill_avg_scores[model][skill]['correct_problems'] / model_skill_avg_scores[model][skill]['total_problems']
@@ -68,7 +68,7 @@ def get_scores_difficulty(model_results, verbose=False):
             diff = entry['difficulty']
             if diff not in model_diff_avg_scores[model]:
                 model_diff_avg_scores[model][diff] = {'correct_problems': 0, 'total_problems': 0}
-            model_diff_avg_scores[model][diff]['correct_problems'] += entry['judgement']
+            model_diff_avg_scores[model][diff]['correct_problems'] += entry['judgment']
             model_diff_avg_scores[model][diff]['total_problems'] += 1
         for diff in model_diff_avg_scores[model]:
             model_diff_avg_scores[model][diff]['avg_score'] = model_diff_avg_scores[model][diff]['correct_problems'] / model_diff_avg_scores[model][diff]['total_problems']
@@ -88,7 +88,7 @@ def get_scores_skill_difficulty(model_results, verbose=False):
                 model_skill_diff_avg_scores[model][skill] = {}
             if diff not in model_skill_diff_avg_scores[model][skill]:
                 model_skill_diff_avg_scores[model][skill][diff] = {'correct_problems': 0, 'total_problems': 0}
-            model_skill_diff_avg_scores[model][skill][diff]['correct_problems'] += entry['judgement']
+            model_skill_diff_avg_scores[model][skill][diff]['correct_problems'] += entry['judgment']
             model_skill_diff_avg_scores[model][skill][diff]['total_problems'] += 1
         for skill in model_skill_diff_avg_scores[model]:
             for diff in model_skill_diff_avg_scores[model][skill]:
@@ -99,7 +99,7 @@ def get_scores_skill_difficulty(model_results, verbose=False):
 def save_wrong_logs(model_results, save_dir, verbose=False):
     printv("Saving wrong logs...", verbose=verbose)
     for model in model_results.keys():
-        wrong_logs = [d for d in model_results[model] if d['judgement'] == 0]
+        wrong_logs = [d for d in model_results[model] if d['judgment'] == 0]
         write_json(f'{save_dir}/{model}_wrong_logs.json', wrong_logs)
 
 # draw a bar plot that summarizes the scores

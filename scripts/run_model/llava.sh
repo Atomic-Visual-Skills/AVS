@@ -10,6 +10,20 @@ python evaluation/run_model.py \
 --output results/run_model/llava/llava-13b.json \
 --size 13b
 
+python evaluation/run_model.py \
+--model llava \
+--input data/test.json \
+--output results/run_model/llava/llava-7b-cot.json \
+--size 7b
+--cot
+
+python evaluation/run_model.py \
+--model llava \
+--input data/test.json \
+--output results/run_model/llava/llava-13b-cot.json \
+--size 13b
+--cot
+
 # python evaluation/run_model.py \
 # --model llava \
 # --input data/test.json \
