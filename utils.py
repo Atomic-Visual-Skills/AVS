@@ -24,7 +24,7 @@ def write_json(file_path, data):
 def get_evaluation_chat_response(sys_prompt, user_prompt, api_key):
     client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o-mini-2024-07-18",
         messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": user_prompt},

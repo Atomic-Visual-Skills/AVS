@@ -39,9 +39,12 @@ class Table_LLaVA(ModelInterface):
             "temperature": self.temperature,
             "top_p": None,
             "num_beams": 1,
-            "max_new_tokens": self.max_tokens
+            "max_new_tokens": self.max_tokens,
+            "tokenizer": self.tokenizer,
+            "model": self.model,
+            "image_processor": self.image_processor
         })()
 
-        output = evalmodel(args_llava, self.model_name, self.tokenizer, self.model, self.image_processor, self.context_len)
+        output = evalmodel(args_llava)
 
         return output
