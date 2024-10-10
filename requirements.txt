@@ -2,6 +2,8 @@
 python-dotenv
 pillow
 tqdm
+pandas
+matplotlib
 
 # gpt-4o
 openai
@@ -13,14 +15,11 @@ bitsandbytes
 sentencepiece
 protobuf
 
-
 # math-llava
 einops
 
-
 # Intern-VL
 timm
-
 
 # Phi
 flash-attn
@@ -30,9 +29,3 @@ attrdict
 
 # gemini
 google-generativeai
-
-# claude
-anthropic
-
-pandas
-matplotlib
