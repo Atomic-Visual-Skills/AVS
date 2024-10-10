@@ -7,12 +7,9 @@ import argparse
 from tqdm import tqdm
 import os
 
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from utils import *
 
-# convert difficulty to ['easy', 'medium', 'hard', 'hell', 'abyss']
+# Convert difficulty to ['easy', 'medium', 'hard', 'hell', 'abyss']
 def convert_difficulty(difficulty):
     difficulty = str(difficulty).lower()
     if 'easy' in difficulty or '1' in difficulty:
@@ -29,7 +26,7 @@ def convert_difficulty(difficulty):
         raise ValueError(f"Unknown difficulty: {difficulty}")
     return difficulty
 
-# calculate average scores for each model
+# Calculate average scores for each model
 def get_scores(model_results, verbose=False):
     printv("Getting scores for each model...", verbose=verbose)
     model_avg_scores = {}
@@ -38,7 +35,7 @@ def get_scores(model_results, verbose=False):
         model_avg_scores[model] = {'correct_problems': sum(scores), 'total_problems': len(scores), 'avg_score': np.mean(scores)}
     return model_avg_scores
 
-# calculate average scores for each model and skill
+# Calculate average scores for each model and skill
 def get_scores_skill(model_results, verbose=False):
     printv("Getting scores for each model and skill...", verbose=verbose)
     model_skill_avg_scores = {}
@@ -58,7 +55,7 @@ def get_scores_skill(model_results, verbose=False):
             model_skill_avg_scores[model][skill]['avg_score'] = model_skill_avg_scores[model][skill]['correct_problems'] / model_skill_avg_scores[model][skill]['total_problems']
     return model_skill_avg_scores
 
-# calculate average scores for each model and difficulty
+# Calculate average scores for each model and difficulty
 def get_scores_difficulty(model_results, verbose=False):
     printv("Getting scores for each model and difficulty...", verbose=verbose)
     model_diff_avg_scores = {}
@@ -74,7 +71,7 @@ def get_scores_difficulty(model_results, verbose=False):
             model_diff_avg_scores[model][diff]['avg_score'] = model_diff_avg_scores[model][diff]['correct_problems'] / model_diff_avg_scores[model][diff]['total_problems']
     return model_diff_avg_scores
 
-# calculate average scores for each model and skill and difficulty
+# Calculate average scores for each model and skill and difficulty
 def get_scores_skill_difficulty(model_results, verbose=False):
     printv("Getting scores for each model and skill, difficulty...", verbose=verbose)
     model_skill_diff_avg_scores = {}
@@ -95,53 +92,12 @@ def get_scores_skill_difficulty(model_results, verbose=False):
                 model_skill_diff_avg_scores[model][skill][diff]['avg_score'] = model_skill_diff_avg_scores[model][skill][diff]['correct_problems'] / model_skill_diff_avg_scores[model][skill][diff]['total_problems']
     return model_skill_diff_avg_scores
 
-# save wrong logs
+# Save logs of problems that were not answered correctly
 def save_wrong_logs(model_results, save_dir, verbose=False):
     printv("Saving wrong logs...", verbose=verbose)
     for model in model_results.keys():
         wrong_logs = [d for d in model_results[model] if d['judgment'] == 0]
         write_json(f'{save_dir}/{model}_wrong_logs.json', wrong_logs)
-
-# draw a bar plot that summarizes the scores
-# FIXME: this function is not working properly
-def draw_plot(model_avg_scores, model_skill_avg_scores, model_diff_avg_scores, model_skill_diff_avg_scores, verbose=False):
-    printv("Drawing plots...", verbose=verbose)
-    for model in model_avg_scores.keys():
-        avg_scores = model_avg_scores[model]
-        skill_avg_scores = model_skill_avg_scores[model]
-        diff_avg_scores = model_diff_avg_scores[model]
-        skill_diff_avg_scores = model_skill_diff_avg_scores[model]
-
-        # create a figure and a set of subplots
-        fig, ax = plt.subplots(2, 2, figsize=(12, 12))
-
-        # plot skill average scores
-        for i, skill in enumerate(skill_avg_scores.keys()):
-            ax[0, 1].bar(skill_avg_scores[skill].keys(), [d['avg_score'] for d in skill_avg_scores[skill].values()], label=skill, alpha=0.5)
-        ax[0, 1].set_title(f'{model} skill average scores')
-        ax[0, 1].set_xlabel('difficulty')
-        ax[0, 1].set_ylabel('average score')
-        ax[0, 1].legend()
-
-        # plot difficulty average scores
-        ax[1, 0].bar(diff_avg_scores.keys(), [d['avg_score'] for d in diff_avg_scores.values()])
-        ax[1, 0].set_title(f'{model} difficulty average scores')
-        ax[1, 0].set_xlabel('difficulty')
-        ax[1, 0].set_ylabel('average score')
-
-        # plot skill and difficulty average scores
-        for i, skill in enumerate(skill_diff_avg_scores.keys()):
-            for j, diff in enumerate(skill_diff_avg_scores[skill].keys()):
-                ax[1, 1].bar(diff, skill_diff_avg_scores[skill][diff]['avg_score'], label=f'{skill} {diff}', alpha=0.5)
-        ax[1, 1].set_title(f'{model} skill and difficulty average scores')
-        ax[1, 1].set_xlabel('difficulty')
-        ax[1, 1].set_ylabel('average score')
-        ax[1, 1].legend()
-
-        plt.tight_layout()
-        plt.savefig(f'{model}_scores.png')
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -150,14 +106,13 @@ if __name__ == '__main__':
     parser.add_argument('--models', type=str, nargs='+', required=True)
     parser.add_argument('--save_dir', type=str, default='.')
     parser.add_argument('--add_wrong_logs', action='store_true', help='add logs of problems that were not answered correctly')
-    parser.add_argument('--add_plot', action='store_true', help='add plot of scores')
     parser.add_argument('--verbose', '-v', action='store_true', help='verbose mode')
     args = parser.parse_args()
 
-    # if the save_dir does not exist, create it
+    # If the save_dir does not exist, create it
     os.makedirs(args.save_dir, exist_ok=True)
 
-    # for each model, find json files that include the model name
+    # For each model, find json files that include the model name
     model_files = {}
     for model in args.models:
         model_files[model] = []
@@ -165,7 +120,7 @@ if __name__ == '__main__':
             if model.lower() in file.stem.lower():
                 model_files[model].append(file)
     
-    # for each model, load json files
+    # For each model, load json files
     model_results = {}
     for model in args.models:
         model_results[model] = []
@@ -173,7 +128,7 @@ if __name__ == '__main__':
             data = read_json(file)
             model_results[model].extend(data)
 
-    # for each model, remove duplicates that share same image_dir
+    # For each model, remove duplicates that share same image_dir
     for model in args.models:
         image_dirs = set()
         unique_results = []
@@ -184,19 +139,19 @@ if __name__ == '__main__':
         model_results[model] = unique_results
         print(f'{model} has {len(model_results[model])} unique results')
     
-    # convert various difficulty levels to ['easy', 'medium', 'hard', 'hell', 'abyss']
+    # Convert various difficulty levels to ['easy', 'medium', 'hard', 'hell', 'abyss']
     for model in args.models:
         for result in model_results[model]:
             if 'difficulty' in result:
                 result['difficulty'] = convert_difficulty(result['difficulty'])
 
-    # calculate average scores
+    # Calculate average scores
     model_avg_scores = get_scores(model_results, verbose=args.verbose)
     model_skill_avg_scores = get_scores_skill(model_results, verbose=args.verbose)
     model_diff_avg_scores = get_scores_difficulty(model_results, verbose=args.verbose)
     model_skill_diff_avg_scores = get_scores_skill_difficulty(model_results, verbose=args.verbose)
 
-    # save each scores to json
+    # Save each scores to json, one for each model
     for model in args.models:
         write_json(f'{args.save_dir}/{model}_avg_scores.json', model_avg_scores[model])
         write_json(f'{args.save_dir}/{model}_skill_avg_scores.json', model_skill_avg_scores[model])
@@ -206,13 +161,7 @@ if __name__ == '__main__':
     # save wrong logs
     save_wrong_logs(model_results, args.save_dir, verbose=args.verbose)
 
-    # TODO: fix this function
-    # draw plot
-    # if args.add_plot:
-    #    draw_plot(model_avg_scores, model_skill_avg_scores, model_diff_avg_scores, model_skill_diff_avg_scores, verbose=args.verbose)
-
-    # summarize the result to the console
-    # do not use pd.dataframe to print the result
+    # Summarize the result to the console (verbose mode only)
     if args.verbose:
         for model in args.models:
             # for model_diff_avg_scores and model_skill_diff_avg_scores, add the number 1, 2, 3, 4, 5 in front of 'easy', 'medium', 'hard', 'hell', 'abyss'
