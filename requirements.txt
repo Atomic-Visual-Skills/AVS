@@ -1,5 +1,6 @@
 # common
 python-dotenv
+torch
 pillow
 tqdm
 

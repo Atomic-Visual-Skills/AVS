@@ -3,34 +3,28 @@ import copy
 import argparse
 from tqdm import tqdm
 from collections import defaultdict
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import *
 from dotenv import find_dotenv, load_dotenv
 
-# OpenAI
-import openai
-
 from prompts import sys_prompt, demo_prompt_score
 
-
-# load demo prompt
+# Check if the judgment is in the correct format
 def verify_judgment(judgment):
     judgment = judgment.strip()
     if judgment == None or judgment not in ['0', '1']:
         return False
     return True
 
-
+# Create a test prompt for the model to score the answer
 def create_test_prompt(demo_prompt, answer, extraction):
     demo_prompt = demo_prompt.strip()
     test_prompt = f"[Standard Answer] {answer}\n[Model Answer] {extraction}\njudgment: "
     full_prompt = f"{demo_prompt}\n\n{test_prompt}"
     return full_prompt
 
-
+# Match the standard answer with the extracted answer
 def match_answer(answer, extraction, api_key, exact_match=False, verbose=False):
-    # quick match
+    # quick match (exact match)
     if exact_match:
         return '1' if answer == extraction else '0'
     # general extraction
@@ -44,7 +38,7 @@ def match_answer(answer, extraction, api_key, exact_match=False, verbose=False):
         print(f"Error in matching answer:\n[Standard Answer] {answer}\n[Model Answer] {extraction}")
     return ""
 
-
+# If necessary, truncate the response to the last n words
 def trunk_response(response, trunk_length):
     if trunk_length <= 0:
         return response
@@ -52,27 +46,24 @@ def trunk_response(response, trunk_length):
         return_res = ' '.join(response.split(' ')[-trunk_length:])
         return return_res
 
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    # input
     parser.add_argument('--input', type=str)
     parser.add_argument('--output', type=str)
-    # match
     parser.add_argument('--exact_match', action='store_true', help='use exact match to match answer for some problems')
-    # output
     parser.add_argument('--save_every', type=int, default=10, help='save every n problems')
     parser.add_argument('--trunk_response', type=int, default=-1, help='trunk response to the last n words')
     parser.add_argument('--verbose', '-v', action='store_true', help='verbose mode')
-    # args
     args = parser.parse_args()
 
-    # set api key
+    # Set api key
     dotenv_file = find_dotenv()
     load_dotenv(dotenv_file)
     api_key = os.getenv("OPENAI_API_KEY")
 
-    # read results
+    # Read results
     result_file = args.input
     printv(f"Reading {result_file}...", args.verbose)
     results = read_json(result_file)
@@ -81,7 +72,8 @@ if __name__ == '__main__':
 
     score_dict = defaultdict(lambda: defaultdict(list))
     score_version_dict = defaultdict(list)
-    # tqdm, enumerate results
+
+    # Enumerate results
     for i, inst in enumerate(tqdm(results)):
         save_inst = copy.deepcopy(inst)
         
@@ -101,7 +93,7 @@ if __name__ == '__main__':
 
         save_results.append(save_inst)
 
-        # judgment statistics
+        # Print and save judgment statistics
         printv(f"Total: {len(save_results)}, Correct: {len([inst for inst in save_results if inst['judgment']])}", args.verbose)
 
         if (i+1) % args.save_every == 0 or i == len(results)-1:
