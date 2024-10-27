@@ -1,0 +1,18 @@
+[
+    {
+        "image_dir": "OCR/image_1.png",
+        "skill": "OCR",
+        "question": "There are several numbers and letters in the image. Among {2, 4, 6, 8}, choose one number that you can detect from the image.",
+        "answer": "2",
+        "random": 4,
+        "difficulty": "medium"
+    },
+    {
+        "image_dir": "OCR/image_2.png",
+        "skill": "OCR",
+        "question": "There are two shapes with letters in the image. Read and identify the letters in the right triangle.",
+        "answer": "G9",
+        "random": 0,
+        "difficulty": "easy"
+    }
+]
