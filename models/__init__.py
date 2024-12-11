@@ -4,6 +4,9 @@ def load_model(model, size=None, *args, **kwargs):
     if model == 'gpt-4o':
         from .GPT_4o import GPT_4o
         return GPT_4o('gpt-4o-2024-05-13', *args, **kwargs)
+    if model == 'o1-preview':
+        from .O1_preview import O1_preview
+        return O1_preview('o1-preview', *args, **kwargs)
     elif model == 'gemini':
         from .Gemini import Gemini
         return Gemini('gemini-1.5-pro-001', *args, **kwargs)
