@@ -28,6 +28,14 @@ Also, write down .env file with your api key.
 
 **2. Download Dataset**
 
+Download `images` directory and `test.json` to test models on the entire AVSBench dataset from [here](https://drive.google.com/drive/folders/1GRmasGPwu7pucbPvSHh6NA9xOn0w9Fti?usp=sharing). Then, locate them in `data/` directory. If you would like to test on best problems, you should also download `Best99.json`. You should unzip the downloaded `images`, locating all the subdirectories in `data/images/`.
+
+```
+# make sure the current directory is the local repository
+
+mv {downloaded_files_path} data/
+unzip data/images-20241214T153017Z-001.zip -d data/
+```
 
 **3. Get Model Responses**
 ```
@@ -44,10 +52,28 @@ sh scripts/extract_answer/gpt-4o.sh
 sh scripts/score_answer/gpt-4o.sh
 ```
 
-**All at once (3 ~ 5)**
+**All at once (3 - 5)**
 ```
 sh scripts/process/gpt-4o.sh
 ```
+
+**Testing on only best 99 problems**
+
+Replace the content of `scripts/run_model/gpt-4o.sh` to the following, then follow 3 - 5.
+
+```
+python evaluation/run_model.py \
+--model gpt-4o \
+--input data/Best99.json \
+--output results/run_model/gpt-4o/gpt-4o.json
+
+python evaluation/run_model.py \
+--model gpt-4o \
+--input data/Best99.json \
+--output results/run_model/gpt-4o/gpt-4o-cot.json \
+--cot
+```
+
 
 ## Problem Examples
 ![Figure 1](figs/AVSB_failures.png)
